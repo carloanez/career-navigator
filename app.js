@@ -61,14 +61,16 @@ function tcmSprintReference(activity,role){
 function resource(activity,role){
  const skill=C.skills.find(item=>item.id===activity.skill);
  const tcm=tcmSprintReference(activity,role);
+ const specialist=tcm?null:availableTraining(role).find(option=>option.sprintSpecialist&&option.skills.includes(activity.skill));
  let reference;
  if(state.budget==='free'){
   reference=`<strong>Public reference:</strong> ${ext(skill.frameworks[0])}. Complete the original sprint in your own isolated lab.`;
  }else if(state.budget==='sponsored'&&['ai','aisec','python','judgment','appsec','response','cloud'].includes(activity.skill)){
   reference=`<strong>Sponsored option:</strong> ${ext('sans-ai','SANS AI training portfolio')} · ${ext(activity.source,'Additional reference')}. Match the current syllabus before enrolling.`;
  }else{
-  reference=`<strong>${tcm?'Additional references':'Suggested reference'}:</strong> ${ext(activity.source)} · ${ext(skill.frameworks[0],'Public framework reference')}. Some external labs or courses require a subscription.`;
+  reference=`<strong>${tcm||specialist?'Additional references':'Suggested reference'}:</strong> ${ext(activity.source)} · ${ext(skill.frameworks[0],'Public framework reference')}. Some external labs or courses require a subscription.`;
  }
+ if(specialist)return `<strong>Suggested training:</strong> ${ext(specialist.source)} <span>(${esc(specialist.scope)})</span><br>${reference}`;
  if(!tcm)return reference;
  const access=tcm.access==='free'?'Free · foundational practice':'TCM membership';
  return `<strong>Suggested training:</strong> ${ext(tcm.source)} <span>(${access})</span><br>${reference}`;
@@ -76,7 +78,7 @@ function resource(activity,role){
 function moduleCard(a,role,capstone=false){return `<article class="card module ${a.done?'completed':''}"><div class="module-head"><input class="module-check" type="checkbox" data-complete="${a.id}" aria-label="Mark ${esc(a.title)} complete" ${a.done?'checked':''}><div class="module-title"><h3>${esc(a.title)}</h3><div class="tags">${tag(capstone?'Portfolio & review':'Original study sprint',capstone?'purple':'neutral')}${tag(a.hours+' estimated hours','neutral')}${!capstone?tag('Target level '+a.level,'neutral'):''}${a.done?tag('Self-reported complete'):''}</div><p>${esc(a.deliverable)}</p></div></div>${!capstone?`<p class="inline-note">${resource(a,role)}</p><details><summary>Why this activity?</summary><p>Builds ${esc(C.skills.find(s=>s.id===a.skill).name)} to level ${a.level}. ${a.prereqs.length?'Prerequisite activities: '+a.prereqs.map(id=>esc(C.activities.find(x=>x.id===id).title)).join('; ')+'.':'This is a starting activity with no required predecessor.'} Existing baseline proficiency can satisfy prerequisites. The duration is an IgniteCyber planning estimate, not provider course duration.</p></details>`:''}<div class="evidence"><label for="e-${a.id}">Evidence note or portfolio URL · local, self-reported</label><input id="e-${a.id}" data-evidence="${a.id}" maxlength="2000" placeholder="What did you demonstrate? Add a report link or reviewer note…" value="${esc(state.evidence[a.id]||'')}"></div></article>`;}
 function providerCard(option,role){
  const access=option.access==='free'?'Free / public':option.access==='sponsored'?'Sponsored option':'Provider access';
- return `<article class="card"><div class="card-top">${tag(option.provider,'neutral')}${tag(access,option.access==='free'?'':'purple')}</div><h4>${esc(option.title)}</h4><p>${esc(option.detail)}</p><div class="tags">${option.skills.filter(id=>role.requirements[id]).map(id=>tag(C.skills.find(skill=>skill.id===id).name,'neutral')).join('')}</div><p class="inline-note">${esc(option.scope)}</p>${ext(option.source,option.provider==='TCM Security'?undefined:'View '+option.title)}</article>`;
+ return `<article class="card"><div class="card-top">${tag(option.provider,'neutral')}${tag(access,option.access==='free'?'':'purple')}</div><h4>${esc(option.title)}</h4><p>${esc(option.detail)}</p><div class="tags">${option.skills.filter(id=>role.requirements[id]).map(id=>tag(C.skills.find(skill=>skill.id===id).name,'neutral')).join('')}</div><p class="inline-note">${esc(option.scope)}</p>${ext(option.source,option.provider==='TCM Security'||option.sprintSpecialist?undefined:'View '+option.title)}</article>`;
 }
 function providerOptions(role){
  const candidates=availableTraining(role).filter(option=>option.skills.some(id=>role.requirements[id]));

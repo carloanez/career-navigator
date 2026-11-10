@@ -781,6 +781,86 @@
       "limitation": "Check membership terms.",
       "reviewed": "2026-11-10",
       "access": "Public web page"
+    },
+    {
+      "id": "ms-ai-evaluation",
+      "title": "Microsoft Learn · Evaluating generative AI applications",
+      "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-generative-ai-apps/",
+      "type": "Training",
+      "finding": "Use evaluation criteria and output checks. Pair them with the sprint’s evidence audit and human approval gate.",
+      "limitation": "Public learning module",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "ms-data-lifecycle",
+      "title": "Microsoft Learn · Prevent Data Loss and Govern the Data Lifecycle with Microsoft Purview",
+      "url": "https://learn.microsoft.com/en-us/training/modules/prevent-data-loss-lifecycle-purview/",
+      "type": "Training",
+      "finding": "Use data loss prevention and retention concepts to review data handling across a synthetic lifecycle.",
+      "limitation": "Public learning module · Microsoft Purview",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "nist-control-assessment-course",
+      "title": "NIST · Assessing Security and Privacy Controls Introductory Course",
+      "url": "https://csrc.nist.gov/csrc/media/Projects/risk-management/images-media/rmf-training/53A-intro-course-v1/index.html",
+      "type": "Training",
+      "finding": "Use NIST SP 800-53A to plan authorized checks, document evidence, and report and review findings.",
+      "limitation": "Free self-paced course · assessment planning and reporting",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "ms-threat-modeling",
+      "title": "Microsoft Learn · Threat Modeling Security Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/training/paths/tm-threat-modeling-fundamentals/",
+      "type": "Training",
+      "finding": "Map API data flows, identify trust boundaries, and use the resulting model to prioritize security checks.",
+      "limitation": "Public learning path",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "ms-pipeline-security",
+      "title": "Microsoft Learn · Implement security through a pipeline using Azure DevOps",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-security-through-pipeline-using-devops/",
+      "type": "Training",
+      "finding": "Study pipeline permissions, managed identities, secrets, and approval checks. Apply the controls to the sprint’s example deployment.",
+      "limitation": "Public learning path · platform access may be required for hands-on work",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "nist-rmf-course",
+      "title": "NIST · Risk Management Framework Introductory Course",
+      "url": "https://csrc.nist.gov/CSRC/media/Projects/risk-management/images-media/rmf-training/intro-course-v2_0/index.html",
+      "type": "Training",
+      "finding": "Use the RMF lifecycle to connect control selection, assessment evidence, authorization, and ongoing monitoring.",
+      "limitation": "Free self-paced course",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "inl-ics401",
+      "title": "INL / CISA · ICS Cybersecurity Evaluation (401)",
+      "url": "https://inl.gov/national-security/ics-cybersecurity-training/#ics401",
+      "type": "Training",
+      "finding": "Use the ICS asset, connectivity, and dependency analysis to inform the tabletop and its documented safeguards.",
+      "limitation": "No tuition · registration required",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "inl-ics311",
+      "title": "INL / CISA · ICS Detect the Attacker (311)",
+      "url": "https://inl.gov/national-security/ics-cybersecurity-training/#ics311",
+      "type": "Training",
+      "finding": "Focus on defensive detection and evidence correlation in OT. Complete the sprint’s containment and recovery tabletop separately.",
+      "limitation": "No tuition · in-person registration and acceptance required",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
     }
   ],
   "frameworks": [
@@ -4253,6 +4333,203 @@
       "scope": "Public guidance · guided self-study",
       "detail": "Select controls for a fictional system, identify the evidence needed to assess them, and review SP 800-171 separately if the scenario involves CUI.",
       "aiOnly": false
+    },
+    {
+      "id": "ms-ai-evaluation",
+      "provider": "Microsoft Learn",
+      "title": "Evaluating generative AI applications",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "judgment"
+      ],
+      "source": "ms-ai-evaluation",
+      "access": "free",
+      "scope": "Public learning module",
+      "detail": "Use evaluation criteria and output checks. Pair them with the sprint’s evidence audit and human approval gate.",
+      "aiOnly": true,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "ms-data-lifecycle",
+      "provider": "Microsoft Learn",
+      "title": "Prevent Data Loss and Govern the Data Lifecycle with Microsoft Purview",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "privacy"
+      ],
+      "source": "ms-data-lifecycle",
+      "access": "free",
+      "scope": "Public learning module · Microsoft Purview",
+      "detail": "Use data loss prevention and retention concepts to review data handling across a synthetic lifecycle.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "nist-control-assessment-course",
+      "provider": "NIST",
+      "title": "Assessing Security and Privacy Controls Introductory Course",
+      "domains": [
+        "offensive",
+        "vulnerability"
+      ],
+      "skills": [
+        "offense"
+      ],
+      "source": "nist-control-assessment-course",
+      "access": "free",
+      "scope": "Free self-paced course · assessment planning and reporting",
+      "detail": "Use NIST SP 800-53A to plan authorized checks, document evidence, and report and review findings.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "ms-threat-modeling",
+      "provider": "Microsoft Learn",
+      "title": "Threat Modeling Security Fundamentals",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "appsec"
+      ],
+      "source": "ms-threat-modeling",
+      "access": "free",
+      "scope": "Public learning path",
+      "detail": "Map API data flows, identify trust boundaries, and use the resulting model to prioritize security checks.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "ms-pipeline-security",
+      "provider": "Microsoft Learn",
+      "title": "Implement security through a pipeline using Azure DevOps",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "cloud"
+      ],
+      "source": "ms-pipeline-security",
+      "access": "free",
+      "scope": "Public learning path · platform access may be required for hands-on work",
+      "detail": "Study pipeline permissions, managed identities, secrets, and approval checks. Apply the controls to the sprint’s example deployment.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "nist-rmf-course",
+      "provider": "NIST",
+      "title": "Risk Management Framework Introductory Course",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "risk"
+      ],
+      "source": "nist-rmf-course",
+      "access": "free",
+      "scope": "Free self-paced course",
+      "detail": "Use the RMF lifecycle to connect control selection, assessment evidence, authorization, and ongoing monitoring.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "inl-ics401",
+      "provider": "INL / CISA",
+      "title": "ICS Cybersecurity Evaluation (401)",
+      "domains": [
+        "ot"
+      ],
+      "skills": [
+        "ot"
+      ],
+      "source": "inl-ics401",
+      "access": "free",
+      "scope": "No tuition · registration required",
+      "detail": "Use the ICS asset, connectivity, and dependency analysis to inform the tabletop and its documented safeguards.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "inl-ics311",
+      "provider": "INL / CISA",
+      "title": "ICS Detect the Attacker (311)",
+      "domains": [
+        "ot"
+      ],
+      "skills": [
+        "response"
+      ],
+      "source": "inl-ics311",
+      "access": "free",
+      "scope": "No tuition · in-person registration and acceptance required",
+      "detail": "Focus on defensive detection and evidence correlation in OT. Complete the sprint’s containment and recovery tabletop separately.",
+      "aiOnly": false,
+      "sprintSpecialist": true
     }
   ]
 }
