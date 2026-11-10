@@ -861,6 +861,46 @@
       "limitation": "No tuition · in-person registration and acceptance required",
       "reviewed": "2026-11-10",
       "access": "Public web page"
+    },
+    {
+      "id": "ms-sentinel-detection",
+      "title": "Microsoft Learn · Threat detection with Microsoft Sentinel analytics",
+      "url": "https://learn.microsoft.com/en-us/training/modules/analyze-data-in-sentinel/",
+      "type": "Training",
+      "finding": "Study analytics rules and map rule logic to the sprint’s telemetry, expected signals, and false positives.",
+      "limitation": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "ms-sentinel-incidents",
+      "title": "Microsoft Learn · Security incident management in Microsoft Sentinel",
+      "url": "https://learn.microsoft.com/en-us/training/modules/incident-management-sentinel/",
+      "type": "Training",
+      "finding": "Use incident triage and investigation concepts to organize a timeline, document evidence, and justify a containment decision.",
+      "limitation": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "ms-sentinel-hunting",
+      "title": "Microsoft Learn · Threat hunting with Microsoft Sentinel",
+      "url": "https://learn.microsoft.com/en-us/training/modules/hunt-threats-sentinel/",
+      "type": "Training",
+      "finding": "Translate a threat hypothesis into a hunt query and use bookmarks to record and explain findings.",
+      "limitation": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "ms-ai-guardrails",
+      "title": "Microsoft Learn · Implement generative AI guardrails with Azure AI Content Safety",
+      "url": "https://learn.microsoft.com/en-us/training/modules/moderate-content-detect-harm-azure-ai-content-safety/",
+      "type": "Training",
+      "finding": "Use the defensive guardrail lessons to document expected behavior and verify protections. Review agent permissions and approval boundaries separately in the original sprint.",
+      "limitation": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
     }
   ],
   "frameworks": [
@@ -4529,6 +4569,86 @@
       "scope": "No tuition · in-person registration and acceptance required",
       "detail": "Focus on defensive detection and evidence correlation in OT. Complete the sprint’s containment and recovery tabletop separately.",
       "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "ms-sentinel-detection",
+      "provider": "Microsoft Learn",
+      "title": "Threat detection with Microsoft Sentinel analytics",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection"
+      ],
+      "source": "ms-sentinel-detection",
+      "access": "free",
+      "scope": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "detail": "Study analytics rules and map rule logic to the sprint’s telemetry, expected signals, and false positives.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "ms-sentinel-incidents",
+      "provider": "Microsoft Learn",
+      "title": "Security incident management in Microsoft Sentinel",
+      "domains": [
+        "soc",
+        "dfir"
+      ],
+      "skills": [
+        "response"
+      ],
+      "source": "ms-sentinel-incidents",
+      "access": "free",
+      "scope": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "detail": "Use incident triage and investigation concepts to organize a timeline, document evidence, and justify a containment decision.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "ms-sentinel-hunting",
+      "provider": "Microsoft Learn",
+      "title": "Threat hunting with Microsoft Sentinel",
+      "domains": [
+        "soc",
+        "intel"
+      ],
+      "skills": [
+        "intel"
+      ],
+      "source": "ms-sentinel-hunting",
+      "access": "free",
+      "scope": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "detail": "Translate a threat hypothesis into a hunt query and use bookmarks to record and explain findings.",
+      "aiOnly": false,
+      "sprintSpecialist": true
+    },
+    {
+      "id": "ms-ai-guardrails",
+      "provider": "Microsoft Learn",
+      "title": "Implement generative AI guardrails with Azure AI Content Safety",
+      "domains": [
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "mlsec"
+      ],
+      "skills": [
+        "aisec"
+      ],
+      "source": "ms-ai-guardrails",
+      "access": "free",
+      "scope": "Free lessons · optional exercises may require Azure access and incur usage charges",
+      "detail": "Use the defensive guardrail lessons to document expected behavior and verify protections. Review agent permissions and approval boundaries separately in the original sprint.",
+      "aiOnly": true,
       "sprintSpecialist": true
     }
   ]
