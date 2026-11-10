@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030e1f">
+  <meta name="description" content="IgniteCyber Academy local cybersecurity and AI career navigator. Assess skills, explore roles, and build an evidence-led roadmap.">
+  <title>Cause-Finder · Career Navigator</title>
+  <link rel="icon" type="image/png" href="assets/cause-finder-logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cause-finder-theme.css">
+  <link rel="stylesheet" href="guided-assessment.css">
+  <link rel="stylesheet" href="career-tools.css">
+  <link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="nova-chat.css">
+  <link rel="stylesheet" href="military-journey.css">
+  <script defer src="military-journey-model.js"></script>
+  <script defer src="catalog.js"></script>
+  <script defer src="job-search/model.js"></script>
+  <script defer src="career-tools-model.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="guided-assessment.js"></script>
+  <script defer src="resume-files.js"></script>
+  <script defer src="career-tools-ui.js"></script>
+  <script defer src="account-client.js"></script>
+  <script defer src="military-journey-ui.js"></script>
+  <script defer src="nova-chat.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview" aria-label="Cause-Finder Career Navigator home"><img src="assets/cause-finder-logo.png" alt="Cause-Finder" width="1537" height="733"><small>IGNITECYBER ACADEMY / CAREER LAB</small></a>
+    <div class="workspace-label">YOUR NEXT CHAPTER</div>
+    <nav aria-label="Main navigation" id="navigation"></nav>
+    <div class="sidebar-bottom"><span class="local-dot"></span> Local workspace <small>Your progress stays in this browser.<br>Export a backup to take it with you.</small><button class="sidebar-link" data-action="export">↓ Export my workspace</button><div class="edition">RESEARCH EDITION <span>01 / 2026</span></div></div>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar"><div>CAREER NAVIGATOR <span>/</span> <strong id="view-label">Overview</strong></div><div class="topbar-right"><button type="button" class="button small primary nova-global" data-nova-chat>Ask Nova AI</button><span class="local-pill">● LOCAL FIRST</span><span class="avatar" aria-label="Cause-Finder learning workspace">CF</span></div></header>
+    <main id="content" tabindex="-1"></main>
+    <footer class="page-footer"><span>CAUSE-FINDER · IGNITECYBER ACADEMY · LEARN WITH DIRECTION.</span><span>Curated research · 21 Oct 2026 <a href="#research">Sources & methodology ↗</a></span></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+</body>
+</html>

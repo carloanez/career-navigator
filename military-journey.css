@@ -1,0 +1,18 @@
+.military-intro p { margin: .6rem 0; }
+.military-project { margin-bottom: 1.25rem; }
+.military-project textarea { width: 100%; }
+.military-tasks { min-width: 0; border: 0; padding: 0; margin: 0 0 1rem; }
+.military-tasks legend { margin-bottom: .75rem; }
+.military-tasks .guide-option { margin-bottom: .4rem; }
+.military-referrals { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%, 280px),1fr)); gap: .75rem; padding: 0; list-style: none; }
+.military-referrals li { padding: .85rem; border: 1px solid var(--line, #24445b); border-radius: .6rem; }
+.military-referrals p { margin: .4rem 0 0; }
+.military-referrals a { font-weight: 650; }
+#military-error { color: #ffb890; }
+#military-posting {
+ min-width: 0;
+ margin: 1rem 0 0;
+ padding: .75rem;
+ border: 1px solid var(--line, #24445b);
+ border-radius: .6rem;
+}

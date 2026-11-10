@@ -1,0 +1,76 @@
+.nova-widget {
+  position: fixed;
+  z-index: 1000;
+  inset: auto max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) auto;
+  display: grid;
+  justify-items: end;
+  gap: .7rem;
+  color: #e7f2ff;
+  font: 400 .9rem/1.45 system-ui, sans-serif;
+}
+.nova-widget *, .nova-widget *::before { box-sizing: border-box; }
+.nova-widget button { cursor: pointer; font: inherit; }
+.nova-widget button:disabled { cursor: default; opacity: .55; }
+.nova-widget :focus-visible { outline: 2px solid #c7ed26; outline-offset: 3px; }
+.nova-launch, .nova-header, .nova-actions { display: flex; align-items: center; gap: .65rem; }
+.nova-launch {
+  padding: .4rem .85rem .4rem .4rem;
+  border: 1px solid #4acfff;
+  border-radius: 999px;
+  color: #fff;
+  background: #0a2642;
+  box-shadow: 0 8px 30px #0008;
+}
+.nova-launch:hover { background: #12395d; }
+.nova-launch > span:last-child, .nova-context { color: #d7ef60; }
+.nova-face {
+  display: grid;
+  place-items: center;
+  flex: 0 0 2.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #143f5f;
+  color: #67dcff;
+}
+.nova-face svg { width: 1.65rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.nova-panel {
+  width: min(24rem, calc(100vw - 2rem));
+  max-height: calc(100dvh - 6rem);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border: 1px solid #3a779b;
+  border-radius: 1.2rem;
+  background: #08192d;
+  box-shadow: 0 16px 55px #000a;
+}
+.nova-panel[hidden] { display: none; }
+.nova-header { padding: .8rem 1rem; background: linear-gradient(120deg, #113e61, #102641); }
+.nova-header h2 { font: 700 1.15rem/1.2 system-ui, sans-serif; margin: 0; color: #fff; }
+.nova-header div > span, .nova-privacy { color: #b8cde2; font-size: .76rem; }
+.nova-close { margin-left: auto; background: transparent; border: 0; color: #fff; min-width: 2.25rem; min-height: 2.25rem; }
+.nova-content { padding: .75rem 1rem; min-height: 6rem; overflow: auto; }
+.nova-context { margin: 0 0 .55rem; font-size: .8rem; }
+.nova-log { max-height: 28vh; overflow: auto; }
+.nova-log p { margin: 0 1rem .55rem 0; padding: .55rem .7rem; border-radius: .7rem; background: #112b46; white-space: pre-wrap; overflow-wrap: anywhere; }
+.nova-log p.nova-user { margin-inline: 1rem 0; background: #154467; }
+.nova-log a { color: #82e4ff; text-decoration: underline; text-underline-offset: .15em; }
+.nova-log a:hover { color: #d7ef60; }
+.nova-log strong { display: block; color: #77dcff; font-size: .75rem; }
+.nova-suggestion, .nova-clear, .nova-save { padding: .4rem .65rem; color: #d9f1ff; background: #0c2844; border: 1px solid #3e6a8a; border-radius: .6rem; }
+.nova-form { padding: .75rem 1rem; border-top: 1px solid #254865; }
+.nova-form label { display: block; margin-bottom: .25rem; }
+.nova-form textarea { width: 100%; color: #e7f2ff; background: #031326; border: 1px solid #54768e; border-radius: .6rem; padding: .55rem; font: inherit; resize: vertical; }
+.nova-privacy { margin: .2rem 0 .5rem; }
+.nova-actions { justify-content: space-between; }
+.nova-send { padding: .4rem .8rem; color: #101a0b; background: #c5e920; border: 1px solid #c5e920; border-radius: .6rem; }
+.nova-status { color: #d6ef88; margin: .4rem 0 0; }
+.nova-status:empty { display: none; }
+.nova-save { margin-top: .45rem; }
+.nova-global { white-space: nowrap; }
+@media (max-width: 550px) {
+  .topbar-right .local-pill, .topbar-right .avatar { display: none; }
+  .topbar-right .nova-global { padding-inline: .65rem; }
+}
+@media print { .nova-widget { display: none; } }

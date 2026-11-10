@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+*.pem
+*.key
+*credentials*.json
+tests/artifacts/
+playwright-report/
+test-results/
+dist/

@@ -1,0 +1,5310 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "0.1.0",
+  "reviewed": "2026-10-21",
+  "baseline": "Unassessed. Plans include all competency gaps and unmet prerequisites.",
+  "mappingStatus": "IgniteCyber proposed curriculum; requires expert review.",
+  "assumedWeeklyHours": 6,
+  "roles": [
+    {
+      "roleId": "soc-core",
+      "title": "SOC Analyst",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "detection": 3,
+        "response": 2,
+        "intel": 2
+      },
+      "credentialCandidates": [
+        "SAL1",
+        "BTL1",
+        "SAL2"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "detection-1",
+          "title": "Investigate telemetry & build a detection",
+          "skill": "detection",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "letsdefend",
+          "deliverable": "Write and test a detection query; include false positives, expected fields, and evidence references.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "response-1",
+          "title": "Reconstruct an incident & justify containment",
+          "skill": "response",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Deliver an artifact-backed timeline, triage log, containment plan, and recovery checks.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 10,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "intel-1",
+          "title": "Turn intelligence into a testable hunt",
+          "skill": "intel",
+          "level": 3,
+          "hours": 22,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "attack",
+          "deliverable": "Write a sourced intelligence brief and a testable hunt hypothesis with confidence and counter-evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 14,
+          "endWeek": 17,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-soc-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent soc analyst scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 116,
+      "weeks": 20,
+      "completed": 0,
+      "total": 6
+    },
+    {
+      "roleId": "soc-ai",
+      "title": "AI-Augmented SOC Analyst",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "detection": 3,
+        "response": 2,
+        "intel": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "SAL1",
+        "BTL1",
+        "SAL2",
+        "GASAE"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "detection-1",
+          "title": "Investigate telemetry & build a detection",
+          "skill": "detection",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "letsdefend",
+          "deliverable": "Write and test a detection query; include false positives, expected fields, and evidence references.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 10,
+          "endWeek": 11,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "response-1",
+          "title": "Reconstruct an incident & justify containment",
+          "skill": "response",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Deliver an artifact-backed timeline, triage log, containment plan, and recovery checks.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "intel-1",
+          "title": "Turn intelligence into a testable hunt",
+          "skill": "intel",
+          "level": 3,
+          "hours": 22,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "attack",
+          "deliverable": "Write a sourced intelligence brief and a testable hunt hypothesis with confidence and counter-evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 21,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-soc-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Investigate a synthetic alert queue with and without an AI assistant. Record false conclusions, evidence checks, escalation decisions, and measured time/quality differences."
+      },
+      "hours": 138,
+      "weeks": 23,
+      "completed": 0,
+      "total": 8
+    },
+    {
+      "roleId": "dfir-core",
+      "title": "Incident Responder",
+      "requirements": {
+        "network": 3,
+        "security": 2,
+        "response": 3,
+        "detection": 2,
+        "python": 2,
+        "privacy": 2
+      },
+      "credentialCandidates": [
+        "GCIH",
+        "GCFA"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 7,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 7,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "response-1",
+          "title": "Reconstruct an incident & justify containment",
+          "skill": "response",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Deliver an artifact-backed timeline, triage log, containment plan, and recovery checks.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "detection-1",
+          "title": "Investigate telemetry & build a detection",
+          "skill": "detection",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "letsdefend",
+          "deliverable": "Write and test a detection query; include false positives, expected fields, and evidence references.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 20,
+          "endWeek": 23,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-dfir-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent incident responder scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 150,
+      "weeks": 25,
+      "completed": 0,
+      "total": 8
+    },
+    {
+      "roleId": "dfir-ai",
+      "title": "AI-Enabled DFIR Analyst",
+      "requirements": {
+        "network": 3,
+        "security": 2,
+        "response": 3,
+        "detection": 2,
+        "python": 2,
+        "privacy": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "GCIH",
+        "GCFA",
+        "GASAE"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 7,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 7,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "response-1",
+          "title": "Reconstruct an incident & justify containment",
+          "skill": "response",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Deliver an artifact-backed timeline, triage log, containment plan, and recovery checks.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "detection-1",
+          "title": "Investigate telemetry & build a detection",
+          "skill": "detection",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "letsdefend",
+          "deliverable": "Write and test a detection query; include false positives, expected fields, and evidence references.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 20,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 21,
+          "endWeek": 23,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 23,
+          "endWeek": 26,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-dfir-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Build a reproducible incident timeline from synthetic artifacts; annotate every AI assertion with a source artifact and preserve an evidence-handling log."
+      },
+      "hours": 172,
+      "weeks": 29,
+      "completed": 0,
+      "total": 10
+    },
+    {
+      "roleId": "offensive-core",
+      "title": "Penetration Tester",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 3,
+        "appsec": 3,
+        "python": 2
+      },
+      "credentialCandidates": [
+        "PT1",
+        "CPTS"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 7,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 7,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "offense-1",
+          "title": "Run an authorized security assessment",
+          "skill": "offense",
+          "level": 3,
+          "hours": 32,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Produce a scoped test report with reproducible findings, mitigations, and retest outcomes.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 18,
+          "endWeek": 22,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 22,
+          "endWeek": 24,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-offensive-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent penetration tester scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 160,
+      "weeks": 27,
+      "completed": 0,
+      "total": 8
+    },
+    {
+      "roleId": "offensive-ai",
+      "title": "AI Red Team Engineer",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 3,
+        "appsec": 3,
+        "python": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "PT1",
+        "CPTS",
+        "AI1",
+        "COAE",
+        "GOAA"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 7,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 7,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "offense-1",
+          "title": "Run an authorized security assessment",
+          "skill": "offense",
+          "level": 3,
+          "hours": 32,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Produce a scoped test report with reproducible findings, mitigations, and retest outcomes.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 18,
+          "endWeek": 22,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 22,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "ai-advanced",
+          "title": "Advanced practice: AI & ML literacy",
+          "skill": "ai",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 27,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 27,
+          "endWeek": 29,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 29,
+          "endWeek": 33,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 33,
+          "endWeek": 35,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-offensive-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Deliver an authorized AI application assessment with reproducible injection cases, trust-boundary findings, severity rationale, and retest evidence."
+      },
+      "hours": 226,
+      "weeks": 38,
+      "completed": 0,
+      "total": 12
+    },
+    {
+      "roleId": "appsec-core",
+      "title": "Application Security Engineer",
+      "requirements": {
+        "security": 3,
+        "python": 3,
+        "appsec": 3,
+        "cloud": 2,
+        "identity": 2
+      },
+      "credentialCandidates": [
+        "CISSP"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 8,
+          "evidence": ""
+        },
+        {
+          "id": "python-advanced",
+          "title": "Advanced practice: Python & automation",
+          "skill": "python",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "python-1"
+          ],
+          "source": "nice",
+          "deliverable": "Demonstrate independent python & automation in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 27,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-appsec-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent application security engineer scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 174,
+      "weeks": 29,
+      "completed": 0,
+      "total": 9
+    },
+    {
+      "roleId": "appsec-ai",
+      "title": "AI Application Security Engineer",
+      "requirements": {
+        "security": 3,
+        "python": 3,
+        "appsec": 3,
+        "cloud": 2,
+        "identity": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "GAIPS",
+        "AI1",
+        "CISSP"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 8,
+          "evidence": ""
+        },
+        {
+          "id": "python-advanced",
+          "title": "Advanced practice: Python & automation",
+          "skill": "python",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "python-1"
+          ],
+          "source": "nice",
+          "deliverable": "Demonstrate independent python & automation in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 21,
+          "evidence": ""
+        },
+        {
+          "id": "ai-advanced",
+          "title": "Advanced practice: AI & ML literacy",
+          "skill": "ai",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 21,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 25,
+          "endWeek": 26,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 26,
+          "endWeek": 30,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 30,
+          "endWeek": 35,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 35,
+          "endWeek": 38,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-appsec-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Create a RAG application threat model and CI evaluation suite that tests cross-user retrieval, unsafe outputs, and tool authorization."
+      },
+      "hours": 240,
+      "weeks": 40,
+      "completed": 0,
+      "total": 13
+    },
+    {
+      "roleId": "cloud-core",
+      "title": "Cloud Security Engineer",
+      "requirements": {
+        "network": 2,
+        "security": 3,
+        "cloud": 3,
+        "identity": 3,
+        "python": 2,
+        "privacy": 2
+      },
+      "credentialCandidates": [
+        "CCSP",
+        "SC-300"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 14,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 22,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-cloud-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent cloud security engineer scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 148,
+      "weeks": 25,
+      "completed": 0,
+      "total": 8
+    },
+    {
+      "roleId": "cloud-ai",
+      "title": "AI Platform Security Engineer",
+      "requirements": {
+        "network": 2,
+        "security": 3,
+        "cloud": 3,
+        "identity": 3,
+        "python": 2,
+        "privacy": 2,
+        "ai": 3,
+        "aisec": 2,
+        "judgment": 2
+      },
+      "credentialCandidates": [
+        "CCSP",
+        "GAIPS",
+        "SC-300"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 14,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 18,
+          "evidence": ""
+        },
+        {
+          "id": "ai-advanced",
+          "title": "Advanced practice: AI & ML literacy",
+          "skill": "ai",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 22,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 22,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 25,
+          "endWeek": 28,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 28,
+          "endWeek": 32,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 32,
+          "endWeek": 34,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 34,
+          "endWeek": 38,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-cloud-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Design a model-serving platform with isolated identities, signed artifacts, audit logs, endpoint access tests, and a rollback runbook."
+      },
+      "hours": 240,
+      "weeks": 40,
+      "completed": 0,
+      "total": 13
+    },
+    {
+      "roleId": "iam-core",
+      "title": "Identity Security Engineer",
+      "requirements": {
+        "security": 3,
+        "identity": 4,
+        "cloud": 3,
+        "appsec": 2,
+        "python": 2
+      },
+      "credentialCandidates": [
+        "SC-300",
+        "CCSP"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "identity-advanced",
+          "title": "Advanced practice: Identity & access",
+          "skill": "identity",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "identity-1"
+          ],
+          "source": "cis",
+          "deliverable": "Demonstrate independent identity & access in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 20,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 20,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 27,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-iam-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent identity security engineer scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 174,
+      "weeks": 29,
+      "completed": 0,
+      "total": 9
+    },
+    {
+      "roleId": "iam-ai",
+      "title": "Agent Identity & Access Engineer",
+      "requirements": {
+        "security": 3,
+        "identity": 4,
+        "cloud": 3,
+        "appsec": 2,
+        "python": 2,
+        "ai": 2,
+        "aisec": 2,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "SC-300",
+        "CCSP",
+        "GAIPS"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "identity-advanced",
+          "title": "Advanced practice: Identity & access",
+          "skill": "identity",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "identity-1"
+          ],
+          "source": "cis",
+          "deliverable": "Demonstrate independent identity & access in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 20,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 20,
+          "endWeek": 22,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 22,
+          "endWeek": 23,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 28,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 28,
+          "endWeek": 30,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 31,
+          "endWeek": 34,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-iam-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Demonstrate an agent with short-lived credentials, a tool allowlist, approval gates, revocation tests, and an auditable identity trail."
+      },
+      "hours": 220,
+      "weeks": 37,
+      "completed": 0,
+      "total": 12
+    },
+    {
+      "roleId": "grc-core",
+      "title": "Cybersecurity Risk Analyst",
+      "requirements": {
+        "security": 3,
+        "risk": 4,
+        "privacy": 3
+      },
+      "credentialCandidates": [
+        "CISSP"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "risk-advanced",
+          "title": "Advanced practice: Governance & risk",
+          "skill": "risk",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "risk-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent governance & risk in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-grc-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent cybersecurity risk analyst scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 106,
+      "weeks": 18,
+      "completed": 0,
+      "total": 6
+    },
+    {
+      "roleId": "grc-ai",
+      "title": "AI Governance & Security Risk Lead",
+      "requirements": {
+        "security": 3,
+        "risk": 4,
+        "privacy": 3,
+        "ai": 3,
+        "aisec": 2,
+        "judgment": 4
+      },
+      "credentialCandidates": [
+        "AIGP",
+        "CISSP",
+        "AAISM"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "risk-advanced",
+          "title": "Advanced practice: Governance & risk",
+          "skill": "risk",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "risk-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent governance & risk in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 11,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 11,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-advanced",
+          "title": "Advanced practice: AI oversight & verification",
+          "skill": "judgment",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "judgment-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai oversight & verification in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 16,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 22,
+          "evidence": ""
+        },
+        {
+          "id": "ai-advanced",
+          "title": "Advanced practice: AI & ML literacy",
+          "skill": "ai",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 23,
+          "endWeek": 26,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 26,
+          "endWeek": 29,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 29,
+          "endWeek": 33,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 33,
+          "endWeek": 37,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-grc-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Create an AI system inventory, risk register, impact assessment, accountable approval workflow, and evidence-backed monitoring plan."
+      },
+      "hours": 236,
+      "weeks": 40,
+      "completed": 0,
+      "total": 13
+    },
+    {
+      "roleId": "intel-core",
+      "title": "Cyber Threat Intelligence Analyst",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "intel": 4,
+        "detection": 3,
+        "python": 2
+      },
+      "credentialCandidates": [
+        "GCTI",
+        "SAL2"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "intel-1",
+          "title": "Turn intelligence into a testable hunt",
+          "skill": "intel",
+          "level": 3,
+          "hours": 22,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "attack",
+          "deliverable": "Write a sourced intelligence brief and a testable hunt hypothesis with confidence and counter-evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "intel-advanced",
+          "title": "Advanced practice: Threat intelligence",
+          "skill": "intel",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "intel-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent threat intelligence in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "detection-1",
+          "title": "Investigate telemetry & build a detection",
+          "skill": "detection",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "letsdefend",
+          "deliverable": "Write and test a detection query; include false positives, expected fields, and evidence references.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 19,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-intel-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent cyber threat intelligence analyst scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 128,
+      "weeks": 22,
+      "completed": 0,
+      "total": 7
+    },
+    {
+      "roleId": "intel-ai",
+      "title": "AI-Augmented Threat Intelligence Analyst",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "intel": 4,
+        "detection": 3,
+        "python": 2,
+        "ai": 2,
+        "aisec": 2,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "GCTI",
+        "SAL2",
+        "GASAE"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "intel-1",
+          "title": "Turn intelligence into a testable hunt",
+          "skill": "intel",
+          "level": 3,
+          "hours": 22,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "attack",
+          "deliverable": "Write a sourced intelligence brief and a testable hunt hypothesis with confidence and counter-evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "intel-advanced",
+          "title": "Advanced practice: Threat intelligence",
+          "skill": "intel",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "intel-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent threat intelligence in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "detection-1",
+          "title": "Investigate telemetry & build a detection",
+          "skill": "detection",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "letsdefend",
+          "deliverable": "Write and test a detection query; include false positives, expected fields, and evidence references.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 18,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 20,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 20,
+          "endWeek": 23,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 23,
+          "endWeek": 27,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 27,
+          "endWeek": 31,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-intel-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Produce a sourced threat brief and executable hunt plan; record source confidence, ATT&CK/ATLAS associations, and model-generated errors."
+      },
+      "hours": 200,
+      "weeks": 34,
+      "completed": 0,
+      "total": 11
+    },
+    {
+      "roleId": "privacy-core",
+      "title": "Data Security Analyst",
+      "requirements": {
+        "security": 3,
+        "privacy": 4,
+        "risk": 3,
+        "identity": 2,
+        "cloud": 2
+      },
+      "credentialCandidates": [
+        "CCSP"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-advanced",
+          "title": "Advanced practice: Data protection & privacy",
+          "skill": "privacy",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "privacy-1"
+          ],
+          "source": "owasp",
+          "deliverable": "Demonstrate independent data protection & privacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 16,
+          "endWeek": 18,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 21,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 22,
+          "endWeek": 26,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-privacy-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent data security analyst scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 170,
+      "weeks": 29,
+      "completed": 0,
+      "total": 9
+    },
+    {
+      "roleId": "privacy-ai",
+      "title": "AI Data Security & Privacy Engineer",
+      "requirements": {
+        "security": 3,
+        "privacy": 4,
+        "risk": 3,
+        "identity": 2,
+        "cloud": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "AIGP",
+        "CCSP",
+        "GAIPS"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-advanced",
+          "title": "Advanced practice: Data protection & privacy",
+          "skill": "privacy",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "privacy-1"
+          ],
+          "source": "owasp",
+          "deliverable": "Demonstrate independent data protection & privacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 16,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "ai-advanced",
+          "title": "Advanced practice: AI & ML literacy",
+          "skill": "ai",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 18,
+          "endWeek": 21,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 21,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 28,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 28,
+          "endWeek": 30,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 30,
+          "endWeek": 34,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 34,
+          "endWeek": 37,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 37,
+          "endWeek": 41,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-privacy-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Document a synthetic-data lineage map; test cross-user retrieval and sensitive-data output with a minimized retention and deletion design."
+      },
+      "hours": 262,
+      "weeks": 44,
+      "completed": 0,
+      "total": 14
+    },
+    {
+      "roleId": "architecture-core",
+      "title": "Security Architect",
+      "requirements": {
+        "network": 3,
+        "security": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "identity": 3,
+        "risk": 3
+      },
+      "credentialCandidates": [
+        "CISSP",
+        "CCSP"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 21,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 21,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 27,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-architecture-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent security architect scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 176,
+      "weeks": 30,
+      "completed": 0,
+      "total": 9
+    },
+    {
+      "roleId": "architecture-ai",
+      "title": "AI Security Architect",
+      "requirements": {
+        "network": 3,
+        "security": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "identity": 3,
+        "risk": 3,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 4
+      },
+      "credentialCandidates": [
+        "CISSP",
+        "CCSP",
+        "GAIPS",
+        "AAISM"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 6,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 8,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 8,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-advanced",
+          "title": "Advanced practice: AI oversight & verification",
+          "skill": "judgment",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "judgment-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai oversight & verification in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 10,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 16,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 23,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 28,
+          "evidence": ""
+        },
+        {
+          "id": "identity-1",
+          "title": "Design least-privilege access",
+          "skill": "identity",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "sc300",
+          "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 28,
+          "endWeek": 31,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 31,
+          "endWeek": 34,
+          "evidence": ""
+        },
+        {
+          "id": "ai-advanced",
+          "title": "Advanced practice: AI & ML literacy",
+          "skill": "ai",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 34,
+          "endWeek": 37,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 38,
+          "endWeek": 41,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-architecture-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Deliver an AI reference architecture with abuse cases, control ownership, failure modes, evaluation criteria, and a residual-risk decision record."
+      },
+      "hours": 262,
+      "weeks": 44,
+      "completed": 0,
+      "total": 14
+    },
+    {
+      "roleId": "ot-core",
+      "title": "OT Security Engineer",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "ot": 4,
+        "response": 2,
+        "risk": 3
+      },
+      "credentialCandidates": [
+        "GICSP",
+        "CISSP"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "ot-1",
+          "title": "Model industrial safety & segmentation",
+          "skill": "ot",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "gicsp",
+          "deliverable": "Create an isolated OT tabletop with zones, conduits, safety boundaries, and a recovery plan.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 10,
+          "evidence": ""
+        },
+        {
+          "id": "ot-advanced",
+          "title": "Advanced practice: OT & critical infrastructure",
+          "skill": "ot",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ot-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent ot & critical infrastructure in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 10,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 16,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 20,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 20,
+          "endWeek": 23,
+          "evidence": ""
+        },
+        {
+          "id": "response-1",
+          "title": "Reconstruct an incident & justify containment",
+          "skill": "response",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Deliver an artifact-backed timeline, triage log, containment plan, and recovery checks.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 23,
+          "endWeek": 27,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-ot-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent ot security engineer scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 174,
+      "weeks": 29,
+      "completed": 0,
+      "total": 9
+    },
+    {
+      "roleId": "ot-ai",
+      "title": "AI-Aware OT Security Engineer",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "ot": 4,
+        "response": 2,
+        "risk": 3,
+        "ai": 2,
+        "judgment": 4
+      },
+      "credentialCandidates": [
+        "GICSP",
+        "CISSP"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "ot-1",
+          "title": "Model industrial safety & segmentation",
+          "skill": "ot",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "gicsp",
+          "deliverable": "Create an isolated OT tabletop with zones, conduits, safety boundaries, and a recovery plan.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 6,
+          "endWeek": 10,
+          "evidence": ""
+        },
+        {
+          "id": "ot-advanced",
+          "title": "Advanced practice: OT & critical infrastructure",
+          "skill": "ot",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ot-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent ot & critical infrastructure in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 10,
+          "endWeek": 13,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 13,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-advanced",
+          "title": "Advanced practice: AI oversight & verification",
+          "skill": "judgment",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "judgment-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai oversight & verification in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 20,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 20,
+          "endWeek": 23,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 27,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 27,
+          "endWeek": 30,
+          "evidence": ""
+        },
+        {
+          "id": "response-1",
+          "title": "Reconstruct an incident & justify containment",
+          "skill": "response",
+          "level": 3,
+          "hours": 24,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Deliver an artifact-backed timeline, triage log, containment plan, and recovery checks.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 30,
+          "endWeek": 34,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-ot-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Create a tabletop and isolated simulation for an AI-assisted industrial monitoring failure. Demonstrate safe fallback, segmentation, and change approval."
+      },
+      "hours": 216,
+      "weeks": 36,
+      "completed": 0,
+      "total": 12
+    },
+    {
+      "roleId": "vulnerability-core",
+      "title": "Vulnerability Analyst",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 2,
+        "appsec": 2,
+        "risk": 3,
+        "python": 2
+      },
+      "credentialCandidates": [
+        "PT1",
+        "CISSP"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 7,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 7,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "offense-1",
+          "title": "Run an authorized security assessment",
+          "skill": "offense",
+          "level": 3,
+          "hours": 32,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Produce a scoped test report with reproducible findings, mitigations, and retest outcomes.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 20,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 21,
+          "endWeek": 25,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 25,
+          "endWeek": 27,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-vulnerability-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent vulnerability analyst scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 178,
+      "weeks": 30,
+      "completed": 0,
+      "total": 9
+    },
+    {
+      "roleId": "vulnerability-ai",
+      "title": "AI-Assisted Exposure Analyst",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 2,
+        "appsec": 2,
+        "risk": 3,
+        "python": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "PT1",
+        "CISSP",
+        "GASAE"
+      ],
+      "items": [
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 3,
+          "evidence": ""
+        },
+        {
+          "id": "network-advanced",
+          "title": "Advanced practice: Networks & operating systems",
+          "skill": "network",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "network-1"
+          ],
+          "source": "attack",
+          "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 4,
+          "endWeek": 7,
+          "evidence": ""
+        },
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 7,
+          "endWeek": 9,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "risk-1",
+          "title": "Build an evidence-based risk register",
+          "skill": "risk",
+          "level": 3,
+          "hours": 18,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "offense-1",
+          "title": "Run an authorized security assessment",
+          "skill": "offense",
+          "level": 3,
+          "hours": 32,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Produce a scoped test report with reproducible findings, mitigations, and retest outcomes.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 28,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 29,
+          "endWeek": 31,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-vulnerability-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Build a synthetic exposure register with validated findings, contextual priorities, remediation owners, and retest evidence."
+      },
+      "hours": 200,
+      "weeks": 34,
+      "completed": 0,
+      "total": 11
+    },
+    {
+      "roleId": "mlsec-core",
+      "title": "Security Automation Engineer",
+      "requirements": {
+        "security": 3,
+        "python": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "privacy": 3
+      },
+      "credentialCandidates": [],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "python-advanced",
+          "title": "Advanced practice: Python & automation",
+          "skill": "python",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "python-1"
+          ],
+          "source": "nice",
+          "deliverable": "Demonstrate independent python & automation in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 5,
+          "endWeek": 8,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 12,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 12,
+          "endWeek": 15,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 15,
+          "endWeek": 19,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 19,
+          "endWeek": 24,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 24,
+          "endWeek": 27,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-mlsec-core",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Complete an independent security automation engineer scenario with scoped methods, reproducible evidence, a clear report, and peer feedback."
+      },
+      "hours": 176,
+      "weeks": 30,
+      "completed": 0,
+      "total": 9
+    },
+    {
+      "roleId": "mlsec-ai",
+      "title": "AI/ML Security Engineer",
+      "requirements": {
+        "security": 3,
+        "python": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "privacy": 3,
+        "ai": 4,
+        "aisec": 4,
+        "judgment": 3
+      },
+      "credentialCandidates": [
+        "GMLE",
+        "GAIPS",
+        "COAE",
+        "GASAE"
+      ],
+      "items": [
+        {
+          "id": "security-1",
+          "title": "Security principles in practice",
+          "skill": "security",
+          "level": 2,
+          "hours": 12,
+          "stage": 0,
+          "prereqs": [],
+          "source": "cc",
+          "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 1,
+          "endWeek": 2,
+          "evidence": ""
+        },
+        {
+          "id": "python-1",
+          "title": "Automate a small security task",
+          "skill": "python",
+          "level": 2,
+          "hours": 16,
+          "stage": 0,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 3,
+          "endWeek": 5,
+          "evidence": ""
+        },
+        {
+          "id": "python-advanced",
+          "title": "Advanced practice: Python & automation",
+          "skill": "python",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "python-1"
+          ],
+          "source": "nice",
+          "deliverable": "Demonstrate independent python & automation in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 5,
+          "endWeek": 8,
+          "evidence": ""
+        },
+        {
+          "id": "ai-1",
+          "title": "AI literacy for security practitioners",
+          "skill": "ai",
+          "level": 2,
+          "hours": 12,
+          "stage": 1,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "htb",
+          "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 9,
+          "endWeek": 10,
+          "evidence": ""
+        },
+        {
+          "id": "ai-advanced",
+          "title": "Advanced practice: AI & ML literacy",
+          "skill": "ai",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 11,
+          "endWeek": 14,
+          "evidence": ""
+        },
+        {
+          "id": "network-1",
+          "title": "Systems & network essentials",
+          "skill": "network",
+          "level": 2,
+          "hours": 18,
+          "stage": 0,
+          "prereqs": [],
+          "source": "thm",
+          "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 14,
+          "endWeek": 17,
+          "evidence": ""
+        },
+        {
+          "id": "appsec-1",
+          "title": "Threat-model & test a web API",
+          "skill": "appsec",
+          "level": 3,
+          "hours": 26,
+          "stage": 2,
+          "prereqs": [
+            "security-1",
+            "network-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 17,
+          "endWeek": 21,
+          "evidence": ""
+        },
+        {
+          "id": "judgment-1",
+          "title": "Verify outputs & bound agent autonomy",
+          "skill": "judgment",
+          "level": 3,
+          "hours": 10,
+          "stage": 1,
+          "prereqs": [
+            "ai-1"
+          ],
+          "source": "htb-aug",
+          "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 21,
+          "endWeek": 23,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-1",
+          "title": "Test prompt injection & agent boundaries",
+          "skill": "aisec",
+          "level": 3,
+          "hours": 24,
+          "stage": 3,
+          "prereqs": [
+            "ai-1",
+            "appsec-1",
+            "judgment-1"
+          ],
+          "source": "portswigger",
+          "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 23,
+          "endWeek": 27,
+          "evidence": ""
+        },
+        {
+          "id": "aisec-advanced",
+          "title": "Advanced practice: Adversarial AI & LLM security",
+          "skill": "aisec",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "aisec-1"
+          ],
+          "source": "atlas",
+          "deliverable": "Demonstrate independent adversarial ai & llm security in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 27,
+          "endWeek": 30,
+          "evidence": ""
+        },
+        {
+          "id": "security-advanced",
+          "title": "Advanced practice: Security foundations",
+          "skill": "security",
+          "level": 4,
+          "hours": 20,
+          "stage": 3,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "csf",
+          "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 30,
+          "endWeek": 33,
+          "evidence": ""
+        },
+        {
+          "id": "cloud-1",
+          "title": "Secure a workload & its deployment pipeline",
+          "skill": "cloud",
+          "level": 3,
+          "hours": 28,
+          "stage": 2,
+          "prereqs": [
+            "network-1",
+            "security-1"
+          ],
+          "source": "offsec-path",
+          "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 34,
+          "endWeek": 38,
+          "evidence": ""
+        },
+        {
+          "id": "privacy-1",
+          "title": "Trace data & prevent disclosure",
+          "skill": "privacy",
+          "level": 3,
+          "hours": 20,
+          "stage": 2,
+          "prereqs": [
+            "security-1"
+          ],
+          "source": "airmf",
+          "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+          "access": "free",
+          "kind": "Original study sprint",
+          "done": false,
+          "startWeek": 38,
+          "endWeek": 41,
+          "evidence": ""
+        }
+      ],
+      "capstone": {
+        "id": "capstone-mlsec-ai",
+        "title": "Role portfolio & human review",
+        "hours": 16,
+        "stage": 4,
+        "done": false,
+        "evidence": "",
+        "deliverable": "Build a small reproducible ML security evaluation harness with trusted data provenance, baseline metrics, adversarial cases, and regression gates."
+      },
+      "hours": 262,
+      "weeks": 44,
+      "completed": 0,
+      "total": 14
+    }
+  ]
+}

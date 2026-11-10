@@ -1,0 +1,826 @@
+{
+  "version": "0.2.0",
+  "authorship": "Original IgniteCyber educational questions and self-reflection rubrics; not an employer question bank or verified assessment.",
+  "questions": [
+    {
+      "id": "technical-network",
+      "type": "technical",
+      "skills": [
+        "network"
+      ],
+      "domain": null,
+      "prompt": "A workstation resolves a service name but cannot connect. Walk me through how you would isolate the failure.",
+      "outline": "Separate name resolution, routing, firewall policy, transport, and service health. Explain which observations would change your hypothesis.",
+      "followup": "What would you capture before escalating the issue?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-security",
+      "type": "technical",
+      "skills": [
+        "security"
+      ],
+      "domain": null,
+      "prompt": "How would you decide which security control to implement first for a small organization?",
+      "outline": "Clarify assets, likely threats, impact, existing controls, constraints, ownership, and a measurable validation step.",
+      "followup": "What evidence would tell you that the control is working?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-python",
+      "type": "technical",
+      "skills": [
+        "python"
+      ],
+      "domain": null,
+      "prompt": "Describe how you would make a security automation script safe to run repeatedly.",
+      "outline": "Discuss scoped credentials, input validation, idempotence, tests, observable failures, dry runs, and rollback where applicable.",
+      "followup": "What happens when an API returns a partial result?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-detection",
+      "type": "technical",
+      "skills": [
+        "detection"
+      ],
+      "domain": null,
+      "prompt": "How would you decide whether a new detection is useful enough to enable?",
+      "outline": "Describe the threat hypothesis, required telemetry, test cases, false positives, coverage limits, and investigation workflow.",
+      "followup": "What do you do if the data source stops arriving?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-response",
+      "type": "technical",
+      "skills": [
+        "response"
+      ],
+      "domain": null,
+      "prompt": "Walk through your first steps after a credible compromise alert.",
+      "outline": "Explain scope, evidence preservation, triage, communication, proportionate containment, and checks for recovery.",
+      "followup": "How would you handle conflicting evidence?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-offense",
+      "type": "technical",
+      "skills": [
+        "offense"
+      ],
+      "domain": null,
+      "prompt": "How do you handle an interesting finding outside an authorized testing scope?",
+      "outline": "Explain the agreed scope, why you stop the action, evidence handling, escalation to the engagement owner, and safe alternatives.",
+      "followup": "How would you report the risk without extending the test?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-appsec",
+      "type": "technical",
+      "skills": [
+        "appsec"
+      ],
+      "domain": null,
+      "prompt": "How would you threat-model an API that uses an LLM to propose actions?",
+      "outline": "Identify assets and trust boundaries; enforce authorization in host code; validate inputs and outputs; test abuse and failure paths.",
+      "followup": "Which controls must hold even if every model instruction is ignored?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-cloud",
+      "type": "technical",
+      "skills": [
+        "cloud"
+      ],
+      "domain": null,
+      "prompt": "How would you secure a cloud workload that serves an AI model?",
+      "outline": "Cover workload identity, data access, secrets, artifact provenance, deployment controls, monitoring, and recovery.",
+      "followup": "How would you test a permission change before production?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-identity",
+      "type": "technical",
+      "skills": [
+        "identity"
+      ],
+      "domain": null,
+      "prompt": "Explain how you would design least-privilege access for a service or agent.",
+      "outline": "Start with the actual task, enumerate required actions, scope identities and resources, test deny cases, and plan revocation and audit.",
+      "followup": "How would you detect privilege accumulation?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-risk",
+      "type": "technical",
+      "skills": [
+        "risk"
+      ],
+      "domain": null,
+      "prompt": "How would you explain an unresolved AI security risk to a business owner?",
+      "outline": "Connect the system and threat to impact, control evidence, uncertainty, options, ownership, and a reviewable risk decision.",
+      "followup": "What would make you revisit an accepted risk?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-intel",
+      "type": "technical",
+      "skills": [
+        "intel"
+      ],
+      "domain": null,
+      "prompt": "How do you turn a threat report into a useful hunting hypothesis?",
+      "outline": "Check provenance and confidence; identify relevant behavior and assets; define telemetry, a testable query, and counter-evidence.",
+      "followup": "What would you do with an untraceable claim in an AI-generated brief?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-privacy",
+      "type": "technical",
+      "skills": [
+        "privacy"
+      ],
+      "domain": null,
+      "prompt": "How would you investigate cross-customer data leakage in an AI application?",
+      "outline": "Map data flow and access boundaries; preserve evidence; test retrieval authorization, logs, retention, and containment with synthetic data.",
+      "followup": "How would you verify deletion and isolation after a fix?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-ot",
+      "type": "technical",
+      "skills": [
+        "ot"
+      ],
+      "domain": null,
+      "prompt": "What changes when a security recommendation affects an industrial process?",
+      "outline": "Address safety, engineering authority, availability, site procedures, isolated validation, change control, and safe fallback.",
+      "followup": "Who must approve the proposed action?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-ai",
+      "type": "technical",
+      "skills": [
+        "ai"
+      ],
+      "domain": null,
+      "prompt": "Explain RAG to a security colleague and describe where it can fail.",
+      "outline": "Distinguish model, retrieval, data permissions, context, tools, and host code. Discuss grounding limits and evaluation.",
+      "followup": "Why does retrieval alone not guarantee a correct or authorized answer?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-aisec",
+      "type": "technical",
+      "skills": [
+        "aisec"
+      ],
+      "domain": null,
+      "prompt": "How would you evaluate prompt-injection risk in a tool-using AI application?",
+      "outline": "Define authorized scope and trust boundaries; use reproducible test cases; examine tool permissions, data exposure, and host-side controls.",
+      "followup": "What would you measure beyond whether the model refused a prompt?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "technical-judgment",
+      "type": "technical",
+      "skills": [
+        "judgment"
+      ],
+      "domain": null,
+      "prompt": "When should a security analyst override an AI agent?",
+      "outline": "Explain authority limits, uncertainty, source evidence, escalation gates, denied actions, human accountability, and recovery.",
+      "followup": "How would you distinguish a fast answer from a reliable one?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-soc",
+      "type": "scenario",
+      "skills": [
+        "detection",
+        "response"
+      ],
+      "domain": "soc",
+      "coreOnly": true,
+      "prompt": "Several alerts point to one workstation, but the timestamps disagree. How would you triage and decide whether to escalate?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Defensive Cybersecurity.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-soc",
+      "type": "scenario",
+      "skills": [
+        "detection",
+        "response"
+      ],
+      "domain": "soc",
+      "aiOnly": true,
+      "prompt": "You are working in security operations. Verify AI alert summaries against raw telemetry, handle malicious alert content, and define approval gates for automated response. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Defensive Cybersecurity. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Investigate a synthetic alert queue with and without an AI assistant. Record false conclusions, evidence checks, escalation decisions, and measured time/quality differences.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-dfir",
+      "type": "scenario",
+      "skills": [
+        "response"
+      ],
+      "domain": "dfir",
+      "coreOnly": true,
+      "prompt": "A suspicious endpoint may contain evidence needed for an investigation. How would you preserve evidence and choose containment?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Incident Response.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-dfir",
+      "type": "scenario",
+      "skills": [
+        "response"
+      ],
+      "domain": "dfir",
+      "aiOnly": true,
+      "prompt": "You are working in incident response & forensics. Use local AI for triage while preserving chain of custody, reproducible timelines, and a fallback when model output is unreliable. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Incident Response. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Build a reproducible incident timeline from synthetic artifacts; annotate every AI assertion with a source artifact and preserve an evidence-handling log.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-offensive",
+      "type": "scenario",
+      "skills": [
+        "offense",
+        "appsec"
+      ],
+      "domain": "offensive",
+      "coreOnly": true,
+      "prompt": "A test reveals an unexpected system beyond the engagement scope. How would you handle the discovery and communicate it?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Vulnerability Analysis.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-offensive",
+      "type": "scenario",
+      "skills": [
+        "offense",
+        "appsec"
+      ],
+      "domain": "offensive",
+      "aiOnly": true,
+      "prompt": "You are working in offensive security. Test AI applications, retrieval boundaries, data integrity, and agent permissions within an authorized scope. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Vulnerability Analysis. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Deliver an authorized AI application assessment with reproducible injection cases, trust-boundary findings, severity rationale, and retest evidence.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-appsec",
+      "type": "scenario",
+      "skills": [
+        "appsec",
+        "python"
+      ],
+      "domain": "appsec",
+      "coreOnly": true,
+      "prompt": "A new API allows users to request records by an identifier. How would you evaluate authorization and design a reproducible security test?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Software Security Assessment.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-appsec",
+      "type": "scenario",
+      "skills": [
+        "appsec",
+        "python"
+      ],
+      "domain": "appsec",
+      "aiOnly": true,
+      "prompt": "You are working in application security & devsecops. Threat-model RAG and agent applications; enforce output handling, server-side authorization, and secure dependency pipelines. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Software Security Assessment. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Create a RAG application threat model and CI evaluation suite that tests cross-user retrieval, unsafe outputs, and tool authorization.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-cloud",
+      "type": "scenario",
+      "skills": [
+        "cloud",
+        "identity"
+      ],
+      "domain": "cloud",
+      "coreOnly": true,
+      "prompt": "A cloud workload unexpectedly gains access to another project’s data. How would you investigate and reduce its permissions safely?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Systems Security Analysis.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-cloud",
+      "type": "scenario",
+      "skills": [
+        "cloud",
+        "identity"
+      ],
+      "domain": "cloud",
+      "aiOnly": true,
+      "prompt": "You are working in cloud & platform security. Secure model endpoints, workload identities, secrets, model artifacts, and AI supply chains in cloud environments. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Systems Security Analysis. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Design a model-serving platform with isolated identities, signed artifacts, audit logs, endpoint access tests, and a rollback runbook.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-iam",
+      "type": "scenario",
+      "skills": [
+        "identity"
+      ],
+      "domain": "iam",
+      "coreOnly": true,
+      "prompt": "A service account has accumulated permissions nobody can explain. How would you establish what it needs and validate a safer policy?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Systems Security Analysis.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-iam",
+      "type": "scenario",
+      "skills": [
+        "identity"
+      ],
+      "domain": "iam",
+      "aiOnly": true,
+      "prompt": "You are working in identity & access management. Bind agents to scoped workload identities, minimize delegated privileges, and require authorization outside the model. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Systems Security Analysis. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Demonstrate an agent with short-lived credentials, a tool allowlist, approval gates, revocation tests, and an auditable identity trail.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-grc",
+      "type": "scenario",
+      "skills": [
+        "risk"
+      ],
+      "domain": "grc",
+      "coreOnly": true,
+      "prompt": "A business owner wants to launch a service with an unresolved security finding. How would you structure a risk decision?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Cybersecurity Policy and Planning.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-grc",
+      "type": "scenario",
+      "skills": [
+        "risk"
+      ],
+      "domain": "grc",
+      "aiOnly": true,
+      "prompt": "You are working in governance, risk & compliance. Maintain AI inventories and risk ownership, set evaluation gates, and gather control evidence throughout the AI lifecycle. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Cybersecurity Policy and Planning. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Create an AI system inventory, risk register, impact assessment, accountable approval workflow, and evidence-backed monitoring plan.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-intel",
+      "type": "scenario",
+      "skills": [
+        "intel",
+        "detection"
+      ],
+      "domain": "intel",
+      "coreOnly": true,
+      "prompt": "A widely shared threat report has uncertain sourcing. How would you determine relevance and build a testable hunt?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Threat Analysis.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-intel",
+      "type": "scenario",
+      "skills": [
+        "intel",
+        "detection"
+      ],
+      "domain": "intel",
+      "aiOnly": true,
+      "prompt": "You are working in threat intelligence & hunting. Validate AI-enriched intelligence, separate observations from inference, and develop hunts for AI-related adversary behavior. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Threat Analysis. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Produce a sourced threat brief and executable hunt plan; record source confidence, ATT&CK/ATLAS associations, and model-generated errors.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-privacy",
+      "type": "scenario",
+      "skills": [
+        "privacy"
+      ],
+      "domain": "privacy",
+      "coreOnly": true,
+      "prompt": "A support workflow exposes data belonging to another customer. How would you map the issue and validate isolation?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Privacy Compliance.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-privacy",
+      "type": "scenario",
+      "skills": [
+        "privacy"
+      ],
+      "domain": "privacy",
+      "aiOnly": true,
+      "prompt": "You are working in data security & privacy. Control AI data use, validate retrieval isolation, evaluate leakage, and manage retention across training and inference. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Privacy Compliance. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Document a synthetic-data lineage map; test cross-user retrieval and sensitive-data output with a minimized retention and deletion design.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-architecture",
+      "type": "scenario",
+      "skills": [
+        "security",
+        "cloud",
+        "appsec"
+      ],
+      "domain": "architecture",
+      "coreOnly": true,
+      "prompt": "Two teams propose different security designs for a new service. How would you compare trust boundaries, controls, and residual risks?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Cybersecurity Architecture.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-architecture",
+      "type": "scenario",
+      "skills": [
+        "security",
+        "cloud",
+        "appsec"
+      ],
+      "domain": "architecture",
+      "aiOnly": true,
+      "prompt": "You are working in security architecture. Design AI trust boundaries and control layers spanning models, retrieval, tools, identities, and organizational accountability. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Cybersecurity Architecture. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Deliver an AI reference architecture with abuse cases, control ownership, failure modes, evaluation criteria, and a residual-risk decision record.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ot",
+      "type": "scenario",
+      "skills": [
+        "ot",
+        "network"
+      ],
+      "domain": "ot",
+      "coreOnly": true,
+      "prompt": "An urgent security patch may disrupt an industrial process. How would you coordinate a safe decision and recovery plan?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Operational Technology Cybersecurity Engineering.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-ot",
+      "type": "scenario",
+      "skills": [
+        "ot",
+        "network"
+      ],
+      "domain": "ot",
+      "aiOnly": true,
+      "prompt": "You are working in ot & critical infrastructure. Evaluate industrial AI use with safety constraints, deterministic fallback, isolated test environments, and human override. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Operational Technology Cybersecurity Engineering. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Create a tabletop and isolated simulation for an AI-assisted industrial monitoring failure. Demonstrate safe fallback, segmentation, and change approval.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-vulnerability",
+      "type": "scenario",
+      "skills": [
+        "offense",
+        "risk"
+      ],
+      "domain": "vulnerability",
+      "coreOnly": true,
+      "prompt": "A scanner reports hundreds of findings with similar severity. How would you prioritize and verify remediation?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Vulnerability Analysis.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-vulnerability",
+      "type": "scenario",
+      "skills": [
+        "offense",
+        "risk"
+      ],
+      "domain": "vulnerability",
+      "aiOnly": true,
+      "prompt": "You are working in exposure & vulnerability management. Validate AI findings, add asset and exploitability context, prioritize fixes, and check remediation rather than trusting generated severity. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Vulnerability Analysis. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Build a synthetic exposure register with validated findings, contextual priorities, remediation owners, and retest evidence.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-mlsec",
+      "type": "scenario",
+      "skills": [
+        "python",
+        "ai"
+      ],
+      "domain": "mlsec",
+      "coreOnly": true,
+      "prompt": "A security automation pipeline produces inconsistent results. How would you test data quality, error handling, and operational safety?",
+      "outline": "Clarify authority, scope, and assumptions. Explain the evidence you would gather, the trade-offs, escalation ownership, and how you would validate the outcome. Connect your method to Secure Systems Development.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "scenario-ai-mlsec",
+      "type": "scenario",
+      "skills": [
+        "python",
+        "ai"
+      ],
+      "domain": "mlsec",
+      "aiOnly": true,
+      "prompt": "You are working in ai & ml security engineering. Secure data/model pipelines, evaluate adversarial behavior, build reproducible security evaluations, and monitor deployment drift. Describe a safe, evidence-led approach to this assignment.",
+      "outline": "Clarify the assignment and authorization. Connect your method to Secure Systems Development. Define evidence, failure cases, responsible owners, and how you would validate the outcome. A relevant portfolio task is: Build a small reproducible ML security evaluation harness with trusted data provenance, baseline metrics, adversarial cases, and regression gates.",
+      "followup": "What would make you stop, seek help, or change your approach?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "behavioral-uncertainty",
+      "type": "behavioral",
+      "skills": [],
+      "domain": null,
+      "prompt": "Tell me about a time you did not know how to solve a technical problem.",
+      "outline": "Use Situation, Task, Action, Result (STAR). Explain what you investigated, how you sought help, and what you learned. A clearly labeled lab example is fine.",
+      "followup": "What would you do differently next time?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "behavioral-communication",
+      "type": "behavioral",
+      "skills": [],
+      "domain": null,
+      "prompt": "Tell me about a time you explained a technical risk to someone without your background.",
+      "outline": "Use STAR. Describe the audience, the decision they needed to make, your explanation, and the observable result.",
+      "followup": "How did you check that they understood the risk?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "behavioral-evidence",
+      "type": "behavioral",
+      "skills": [],
+      "domain": null,
+      "prompt": "Walk me through a project that demonstrates a skill relevant to this role.",
+      "outline": "Distinguish your own contribution from team work. Explain the setup, choices, evidence, limitations, outcome, and what a reviewer can reproduce.",
+      "followup": "Which artifact would you show first, and why?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    },
+    {
+      "id": "behavioral-mistake",
+      "type": "behavioral",
+      "skills": [],
+      "domain": null,
+      "prompt": "Tell me about a mistake or failed hypothesis and how you responded.",
+      "outline": "Use STAR. Take ownership, explain the evidence that changed your view, describe corrective action, and identify a lasting improvement.",
+      "followup": "How did you communicate uncertainty while investigating?",
+      "rubric": [
+        "I answered the actual question and stated my assumptions.",
+        "I explained my actions, reasoning, and trade-offs.",
+        "I connected the answer to real evidence or clearly labeled a hypothetical.",
+        "I described the outcome, validation, or lesson learned."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3303 @@
+{
+  "version": "0.1.0",
+  "reviewed": "2026-10-21",
+  "sources": [
+    {
+      "id": "skillbit",
+      "title": "SkillBit",
+      "url": "https://skillbit.com/",
+      "type": "Platform",
+      "finding": "Hands-on micro-scenarios, role and tool training, and performance-based skills-gap visibility.",
+      "limitation": "Public product claims; no customer account or API inspected.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "skillbit-labs",
+      "title": "SkillBit Labs learning and tracking",
+      "url": "https://skillbit.com/skillbit-labs",
+      "type": "Platform",
+      "finding": "Describes curated learning paths, challenge progression, skills-gap insights, browser labs, and LMS/HR/LXP integration capabilities.",
+      "limitation": "Exact lab-to-role assignments and supported integration protocols were not publicly verified.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "thm",
+      "title": "TryHackMe learning paths",
+      "url": "https://tryhackme.com/paths",
+      "type": "Platform",
+      "finding": "Structured pathways span cyber foundations, SOC, offensive security, and AI security.",
+      "limitation": "Catalog changes; room-level completion is not certification.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "thm-cert",
+      "title": "TryHackMe certification guide",
+      "url": "https://tryhackme.com/resources/blog/tryhackme-certification-guide",
+      "type": "Credential",
+      "finding": "The certification ladder includes SEC1, SAL1, SAL2, PT1, and AI1.",
+      "limitation": "Provider guide; optional credentials, not employment prerequisites.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "thm-ai",
+      "title": "TryHackMe AI security",
+      "url": "https://tryhackme.com/aisecurity",
+      "type": "AI learning",
+      "finding": "A dedicated AI pathway and AI1 practical certification cover attacking and defending AI applications.",
+      "limitation": "Training and professional exam are distinct purchases/activities.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "htb",
+      "title": "HTB Academy paths",
+      "url": "https://academy.hackthebox.com/catalogue/paths",
+      "type": "Platform",
+      "finding": "Separates skill paths from job-role paths; includes AI foundations and AI red teaming.",
+      "limitation": "Catalog reviewed; no learner records accessed.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "htb-ai",
+      "title": "HTB AI workforce development",
+      "url": "https://www.hackthebox.com/ai",
+      "type": "AI learning",
+      "finding": "Offers development and assessment for human and agentic teams.",
+      "limitation": "Public marketing evidence; effectiveness was not independently evaluated.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "htb-aug",
+      "title": "HTB AI-augmented paths",
+      "url": "https://roadmap.hackthebox.com/changelog/new-ai-augmented-learning-paths-learn-to-direct-an-ai-agent-without-giving-up-yo",
+      "type": "AI learning",
+      "finding": "AI-augmented SOC and penetration-testing paths emphasize checking agent work and controlling autonomy.",
+      "limitation": "Incremental releases; complete curriculum availability may vary.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "coae",
+      "title": "HTB Offensive AI certification",
+      "url": "https://www.hackthebox.com/blog/HTB-COAE-Announcement",
+      "type": "Credential",
+      "finding": "COAE validates knowledge across offensive AI and related defense topics.",
+      "limitation": "Official announcement; verify current exam requirements with HTB.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-career",
+      "title": "SANS AI cybersecurity careers guide",
+      "url": "https://www.sans.org/white-papers/sans-ai-cybersecurity-careers-guide",
+      "type": "Career research",
+      "finding": "The live October 19, 2026 page describes four standalone AI roles, five existing roles with AI duties, and one as-yet-untitled work area.",
+      "limitation": "Live page supersedes an older May search snippet. Linked PDF content was not retrieved; no salary claims imported.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-ai",
+      "title": "SANS AI training portfolio",
+      "url": "https://www.sans.org/artificial-intelligence",
+      "type": "AI learning",
+      "finding": "Distinguishes courses focused on AI from established disciplines that incorporate AI skills. Lists SEC545/GAIPS, SEC598/GASAE, SEC535/GOAA, and SEC595/GMLE.",
+      "limitation": "Course and credential relationships verified on public portfolio page; titles can change.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-assess",
+      "title": "SANS workforce assessments",
+      "url": "https://www.sans.org/for-organizations/team-development/cybersecurity-assessments",
+      "type": "Assessment",
+      "finding": "ASAP uses practical tasks by job role; CyberTalent uses multiple-choice questions by topic.",
+      "limitation": "These are separate products; neither is assumed to be an AI career adviser.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-asap",
+      "title": "SANS Applied Skills Analysis Platform",
+      "url": "https://www.sans.org/for-organizations/team-development/cybersecurity-assessments/role-based",
+      "type": "Assessment",
+      "finding": "Role-oriented hands-on assessment supports identification of strengths and development gaps.",
+      "limitation": "Public product information; no trial performed.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-free",
+      "title": "SANS free AI resources / NotebookLM",
+      "url": "https://www.sans.org/mlp/free-ai-security-resources",
+      "type": "AI tool",
+      "finding": "Links to a curated interactive AI NotebookLM resource, guidelines, and career materials.",
+      "limitation": "Notebook requires Google login; linked notebook was not tested. This is a learning aid, not verified career planning automation.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-blueprint",
+      "title": "SANS Secure AI Blueprint",
+      "url": "https://www.sans.org/mlp/ai-security-blueprint",
+      "type": "Framework",
+      "finding": "Organizes secure AI adoption around Protect AI, Utilize AI, and Govern AI.",
+      "limitation": "Used here as a track taxonomy; detailed white paper was not imported.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-maturity",
+      "title": "SANS AI Security Maturity Model",
+      "url": "https://www.sans.org/press/announcements/ai-security-maturity-model-close-gap-between-enterprise-ai-adoption-governance",
+      "type": "AI tool",
+      "finding": "An operational model uses three pillars and five maturity stages.",
+      "limitation": "Organization maturity is different from individual proficiency.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sans-ready",
+      "title": "SANS AI attack readiness check",
+      "url": "https://www.sans.org/go/readiness-for-ai-automated-attacks",
+      "type": "AI tool",
+      "finding": "A browser-based readiness check connects capability questions with training suggestions.",
+      "limitation": "Public interactive capability check; not a validated career selection assessment.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "immersive",
+      "title": "Immersive platform",
+      "url": "https://www.immersivelabs.com/platform",
+      "type": "Platform",
+      "finding": "Advertises adaptive assessments, AI learning builders, agent exercises, and NICE/ATT&CK/ATLAS reporting.",
+      "limitation": "Vendor-described capabilities; access depends on contracted scope.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "immersive-path",
+      "title": "Immersive Resilience Pathways",
+      "url": "https://www.immersivelabs.com/solutions/resilience-pathways",
+      "type": "AI tool",
+      "finding": "Connects organizational objectives to AI-assisted learning recommendations and repeated practical assessment.",
+      "limitation": "Closest researched example of adaptive program planning; not independently benchmarked.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "offsec",
+      "title": "OffSec Learn Enterprise",
+      "url": "https://www.offsec.com/products/learn-enterprise/",
+      "type": "Platform",
+      "finding": "Upskill programs use placement assessments, staged training, labs, and progress tracking, including AI red teaming.",
+      "limitation": "Subscription-specific features; no integration access assumed.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "offsec-path",
+      "title": "OffSec paths",
+      "url": "https://www.offsec.com/learning/paths/",
+      "type": "AI learning",
+      "finding": "Catalog includes LLM red teaming, cloud, DevSecOps, forensics, and defensive foundations.",
+      "limitation": "Availability varies by plan.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "letsdefend",
+      "title": "LetsDefend SOC pathway",
+      "url": "https://help.letsdefend.io/en/articles/8739085-soc-analyst-learning-path",
+      "type": "Platform",
+      "finding": "SOC learning combines alert analysis, investigation, incident management, and threat intelligence.",
+      "limitation": "Public syllabus; AI coaching features were not verified.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "centri",
+      "title": "Centri / Security Blue Team BTL1",
+      "url": "https://www.centri.org/certifications/blue-team-level-1",
+      "type": "Credential",
+      "finding": "Practical junior defensive training and certification.",
+      "limitation": "The researched Security Blue Team URL redirects to Centri; recorded under both names.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "portswigger",
+      "title": "PortSwigger Web LLM attacks",
+      "url": "https://portswigger.net/web-security/learning-paths/llm-attacks",
+      "type": "AI learning",
+      "finding": "Free structured web LLM material and labs address prompt injection and connected API risks.",
+      "limitation": "Lab completion does not award a separate AI professional certification.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "cyberseek",
+      "title": "CyberSeek career pathway",
+      "url": "https://www.cyberseek.org/pathway.html",
+      "type": "Career research",
+      "finding": "Interactive career pathways connect jobs, skills, certifications, and NICE categories.",
+      "limitation": "Some displayed salary data uses September 2023–August 2024 listings; no live salaries reproduced.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "niccs",
+      "title": "CISA Cyber Career Pathways Tool",
+      "url": "https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool",
+      "type": "Career research",
+      "finding": "Explores NICE work roles and related micro-challenges.",
+      "limitation": "Useful model for role exploration; official job titles and work roles are not interchangeable.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "nice",
+      "title": "NIST NICE current components",
+      "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/nice-framework-current-versions",
+      "type": "Framework",
+      "finding": "Work role categories, work roles, competency areas, and task/knowledge/skill statements form the workforce vocabulary. Current page identifies components v2.2.0.",
+      "limitation": "SP 800-181 Rev.1 defines the structure. The current page has an inconsistent year label; release news confirms April 2026. This prototype uses named role anchors, not a full TKS import.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "nice-release",
+      "title": "NIST NICE v2.2.0 release",
+      "url": "https://www.nist.gov/news-events/news/2026/04/nice-releases-nice-framework-components-v220",
+      "type": "Framework",
+      "finding": "Official April 2026 release notice confirms NICE components v2.2.0.",
+      "limitation": "Version reference only; no invented TKS identifiers.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "nice-roles",
+      "title": "NICE workforce framework online",
+      "url": "https://niccs.cisa.gov/workforce-development/nice-framework",
+      "type": "Framework",
+      "finding": "Official work-role vocabulary includes Defensive Cybersecurity, Incident Response, and other operational functions.",
+      "limitation": "Prototype mappings are editorial associations to role names.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "csf",
+      "title": "NIST Cybersecurity Framework",
+      "url": "https://www.nist.gov/cyberframework",
+      "type": "Framework",
+      "finding": "CSF 2.0 supplies organizational cybersecurity outcome categories.",
+      "limitation": "Outcomes are not individual qualifications or certifications.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "airmf",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "type": "Framework",
+      "finding": "AI RMF 1.0 provides voluntary AI risk-management guidance; NIST notes ongoing revision.",
+      "limitation": "Prototype uses the published 1.0 functions; not a compliance determination.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "attack",
+      "title": "MITRE ATT&CK",
+      "url": "https://attack.mitre.org/",
+      "type": "Framework",
+      "finding": "An adversary-behavior knowledge base supports threat-led learning and detection exercises.",
+      "limitation": "Selected technique examples only; no claim of complete coverage.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "atlas",
+      "title": "MITRE ATLAS",
+      "url": "https://atlas.mitre.org/",
+      "type": "Framework",
+      "finding": "A living knowledge base describes adversarial behavior involving AI systems.",
+      "limitation": "Selected topics rather than a pinned full matrix; topic links resolve to the source matrix.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "d3fend",
+      "title": "MITRE D3FEND",
+      "url": "https://d3fend.mitre.org/",
+      "type": "Framework",
+      "finding": "A knowledge graph of cybersecurity countermeasures complements adversary-oriented training.",
+      "limitation": "Conceptual association; no automatic equivalence between attack techniques and defenses.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "owasp",
+      "title": "OWASP LLM Top 10 (2025)",
+      "url": "https://genai.owasp.org/llm-top-10/",
+      "type": "Framework",
+      "finding": "LLM application risk taxonomy covers prompt injection, information disclosure, supply-chain risks, poisoning, and excessive agency.",
+      "limitation": "This prototype uses the 2025 edition, with topic IDs.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "ecsf",
+      "title": "ENISA European Cybersecurity Skills Framework",
+      "url": "https://www.enisa.europa.eu/topics/skills-and-competences/skills-development/european-cybersecurity-skills-framework-ecsf",
+      "type": "Framework",
+      "finding": "Twelve professional role profiles provide a European workforce lens.",
+      "limitation": "Associations here are proposed and not an official NICE-to-ECSF crosswalk.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "saif",
+      "title": "Google Secure AI Framework",
+      "url": "https://www.saif.google/secure-ai-framework",
+      "type": "Framework",
+      "finding": "AI system risk and control guidance supports secure AI design and deployment.",
+      "limitation": "Used as a technical reference; not a personnel certification.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "iso",
+      "title": "ISO/IEC 42001:2023",
+      "url": "https://www.iso.org/standard/42001",
+      "type": "Framework",
+      "finding": "Requirements for an organizational AI management system.",
+      "limitation": "Public abstract reviewed; paid normative text was not accessed. No personal ISO certification implied.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "cis",
+      "title": "CIS Controls v8.1",
+      "url": "https://www.cisecurity.org/controls",
+      "type": "Framework",
+      "finding": "Prioritized cybersecurity safeguards complement role-based learning.",
+      "limitation": "Selected control numbers used as topic anchors.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "giac",
+      "title": "GIAC certification catalog",
+      "url": "https://www.giac.org/certifications",
+      "type": "Credential",
+      "finding": "Provider catalog includes core cyber and newer AI credentials.",
+      "limitation": "Optional credential candidates; check exam conditions and renewal requirements.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "gaips",
+      "title": "GIAC AI Platform Security",
+      "url": "https://www.sans.org/cyber-security-certifications/ai-security-platform-security-gaips",
+      "type": "Credential",
+      "finding": "GAIPS addresses security of generative AI applications and LLM pipelines.",
+      "limitation": "Credential scope is narrower than every skill required by an AI security architect.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "cc",
+      "title": "ISC2 Certified in Cybersecurity",
+      "url": "https://www.isc2.org/certifications/cc",
+      "type": "Credential",
+      "finding": "A foundational certification with no prior work experience required.",
+      "limitation": "Exam preparation and certified status remain distinct from demonstrated job competence.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "ccsp",
+      "title": "ISC2 CCSP",
+      "url": "https://www.isc2.org/certifications/ccsp",
+      "type": "Credential",
+      "finding": "Cloud security credential for design, management, and protection of cloud systems and data.",
+      "limitation": "Experience and endorsement requirements apply; eligibility must be checked with ISC2.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "cissp",
+      "title": "ISC2 CISSP",
+      "url": "https://www.isc2.org/certifications/cissp",
+      "type": "Credential",
+      "finding": "Broad professional security credential for experienced practitioners.",
+      "limitation": "Experience and endorsement requirements apply; not positioned here as an entry-level award.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "aaism",
+      "title": "ISACA AAISM",
+      "url": "https://www.isaca.org/credentialing/aaism",
+      "type": "Credential",
+      "finding": "AI security management credential for holders of an active CISM or CISSP.",
+      "limitation": "Active CISM or CISSP is an eligibility requirement, not just recommended preparation.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "aigp",
+      "title": "IAPP AIGP",
+      "url": "https://iapp.org/certify/aigp",
+      "type": "Credential",
+      "finding": "A professional certification covering responsible AI governance and lifecycle risk.",
+      "limitation": "Governance credential, not a technical AI penetration-testing qualification.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "sc300",
+      "title": "Microsoft SC-300",
+      "url": "https://learn.microsoft.com/en-us/learn/certifications/exams/sc-300/",
+      "type": "Credential",
+      "finding": "Identity and access administrator certification supports an IAM specialization.",
+      "limitation": "Vendor-specific credential; agent identity mapping is an IgniteCyber extension.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "gicsp",
+      "title": "GIAC GICSP",
+      "url": "https://www.giac.org/certifications/global-industrial-cyber-security-professional-gicsp",
+      "type": "Credential",
+      "finding": "Industrial cybersecurity certification provides an OT-focused credential option.",
+      "limitation": "AI/OT specialization still needs additional practical validation.",
+      "reviewed": "2026-10-21",
+      "access": "Public web page"
+    }
+  ],
+  "frameworks": [
+    {
+      "id": "nice",
+      "name": "NIST NICE",
+      "version": "v2.2.0 components",
+      "purpose": "Who does the work",
+      "description": "Named work roles and competencies anchor career discussion.",
+      "topics": [
+        "Work roles",
+        "Task, knowledge and skill statements",
+        "AI security competency"
+      ],
+      "source": "nice"
+    },
+    {
+      "id": "csf",
+      "name": "NIST CSF",
+      "version": "2.0",
+      "purpose": "Which outcomes matter",
+      "description": "Connect learning to organizational cyber outcomes.",
+      "topics": [
+        "Govern",
+        "Identify",
+        "Protect",
+        "Detect",
+        "Respond",
+        "Recover"
+      ],
+      "source": "csf"
+    },
+    {
+      "id": "airmf",
+      "name": "NIST AI RMF",
+      "version": "1.0 published; revision underway",
+      "purpose": "How AI risk is managed",
+      "description": "Connect AI responsibilities to risk-management functions.",
+      "topics": [
+        "Govern",
+        "Map",
+        "Measure",
+        "Manage"
+      ],
+      "source": "airmf"
+    },
+    {
+      "id": "attack",
+      "name": "MITRE ATT&CK",
+      "version": "Living knowledge base",
+      "purpose": "How adversaries operate",
+      "description": "Practice detecting and explaining adversary behaviors.",
+      "topics": [
+        "Enterprise",
+        "ICS",
+        "Selected technique examples"
+      ],
+      "source": "attack"
+    },
+    {
+      "id": "atlas",
+      "name": "MITRE ATLAS",
+      "version": "Living knowledge base",
+      "purpose": "How AI is attacked",
+      "description": "Cover AI-specific threats alongside enterprise tradecraft.",
+      "topics": [
+        "Prompt injection",
+        "Data poisoning",
+        "Model access and evasion"
+      ],
+      "source": "atlas"
+    },
+    {
+      "id": "d3fend",
+      "name": "MITRE D3FEND",
+      "version": "Living countermeasure graph",
+      "purpose": "How systems are defended",
+      "description": "Pair threat exercises with defensible countermeasures.",
+      "topics": [
+        "Harden",
+        "Detect",
+        "Isolate",
+        "Evict",
+        "Restore"
+      ],
+      "source": "d3fend"
+    },
+    {
+      "id": "owasp",
+      "name": "OWASP LLM Top 10",
+      "version": "2025",
+      "purpose": "Where AI apps fail",
+      "description": "Turn application risks into scoped lab objectives.",
+      "topics": [
+        "LLM01 Prompt Injection",
+        "LLM02 Sensitive Information Disclosure",
+        "LLM06 Excessive Agency"
+      ],
+      "source": "owasp"
+    },
+    {
+      "id": "ecsf",
+      "name": "ENISA ECSF",
+      "version": "12 role profiles",
+      "purpose": "A European workforce lens",
+      "description": "Compare responsibilities against professional role profiles.",
+      "topics": [
+        "Implementer",
+        "Architect",
+        "Penetration Tester",
+        "Incident Responder"
+      ],
+      "source": "ecsf"
+    },
+    {
+      "id": "saif",
+      "name": "Google SAIF",
+      "version": "Public risk and control guidance",
+      "purpose": "How to secure the AI stack",
+      "description": "Use system components and controls in design exercises.",
+      "topics": [
+        "Data",
+        "Models",
+        "Infrastructure",
+        "Applications"
+      ],
+      "source": "saif"
+    },
+    {
+      "id": "iso",
+      "name": "ISO/IEC 42001",
+      "version": "2023",
+      "purpose": "How AI programs are governed",
+      "description": "Use the public management-system scope for governance learning.",
+      "topics": [
+        "Organizational management system",
+        "Normative text requires separate access"
+      ],
+      "source": "iso"
+    },
+    {
+      "id": "cis",
+      "name": "CIS Controls",
+      "version": "v8.1",
+      "purpose": "Which safeguards to practice",
+      "description": "Support foundational, operational controls with practical evidence.",
+      "topics": [
+        "Asset inventory",
+        "Data protection",
+        "Access control",
+        "Audit logging"
+      ],
+      "source": "cis"
+    },
+    {
+      "id": "sans-blueprint",
+      "name": "SANS Secure AI Blueprint",
+      "version": "Public three-track model",
+      "purpose": "How the AI portfolio is organized",
+      "description": "Keep protecting AI, using AI, and governing AI connected.",
+      "topics": [
+        "Protect AI",
+        "Utilize AI",
+        "Govern AI"
+      ],
+      "source": "sans-blueprint"
+    }
+  ],
+  "skills": [
+    {
+      "id": "network",
+      "name": "Networks & operating systems",
+      "description": "TCP/IP, Linux, Windows and system behavior",
+      "group": "Foundation",
+      "frameworks": [
+        "attack",
+        "cis"
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security foundations",
+      "description": "Risk, controls, cryptography and ethical scope",
+      "group": "Foundation",
+      "frameworks": [
+        "csf",
+        "cis"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python & automation",
+      "description": "APIs, scripts, version control and testing",
+      "group": "Engineering",
+      "frameworks": [
+        "nice",
+        "saif"
+      ]
+    },
+    {
+      "id": "detection",
+      "name": "Detection & telemetry",
+      "description": "SIEM queries, logging, detection validation",
+      "group": "Defense",
+      "frameworks": [
+        "attack",
+        "d3fend"
+      ]
+    },
+    {
+      "id": "response",
+      "name": "Incident response & forensics",
+      "description": "Triage, timelines, evidence and containment",
+      "group": "Defense",
+      "frameworks": [
+        "csf",
+        "attack"
+      ]
+    },
+    {
+      "id": "offense",
+      "name": "Offensive testing",
+      "description": "Authorized testing, exploitation and reporting",
+      "group": "Offense",
+      "frameworks": [
+        "attack",
+        "atlas"
+      ]
+    },
+    {
+      "id": "appsec",
+      "name": "Application & API security",
+      "description": "Threat modeling, secure code and API trust",
+      "group": "Engineering",
+      "frameworks": [
+        "owasp",
+        "saif"
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud & platform security",
+      "description": "Workloads, containers, pipelines and secrets",
+      "group": "Engineering",
+      "frameworks": [
+        "csf",
+        "saif"
+      ]
+    },
+    {
+      "id": "identity",
+      "name": "Identity & access",
+      "description": "Least privilege, authentication and workload identity",
+      "group": "Engineering",
+      "frameworks": [
+        "cis",
+        "owasp"
+      ]
+    },
+    {
+      "id": "risk",
+      "name": "Governance & risk",
+      "description": "Risk ownership, assessment and control assurance",
+      "group": "Governance",
+      "frameworks": [
+        "csf",
+        "airmf",
+        "iso"
+      ]
+    },
+    {
+      "id": "intel",
+      "name": "Threat intelligence",
+      "description": "Hypotheses, source evaluation and ATT&CK analysis",
+      "group": "Defense",
+      "frameworks": [
+        "attack",
+        "atlas"
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "Data protection & privacy",
+      "description": "Data flows, access boundaries and minimization",
+      "group": "Governance",
+      "frameworks": [
+        "owasp",
+        "airmf"
+      ]
+    },
+    {
+      "id": "ot",
+      "name": "OT & critical infrastructure",
+      "description": "Safety, segmentation and industrial environments",
+      "group": "Engineering",
+      "frameworks": [
+        "attack",
+        "csf"
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI & ML literacy",
+      "description": "Models, RAG, agents, evaluation and limitations",
+      "group": "AI core",
+      "frameworks": [
+        "airmf",
+        "saif"
+      ]
+    },
+    {
+      "id": "aisec",
+      "name": "Adversarial AI & LLM security",
+      "description": "Injection, poisoning, model abuse and guardrails",
+      "group": "AI core",
+      "frameworks": [
+        "atlas",
+        "owasp"
+      ]
+    },
+    {
+      "id": "judgment",
+      "name": "AI oversight & verification",
+      "description": "Ground outputs in evidence; bound agent authority",
+      "group": "AI core",
+      "frameworks": [
+        "airmf",
+        "sans-blueprint"
+      ]
+    }
+  ],
+  "certs": [
+    {
+      "id": "CC",
+      "provider": "ISC2",
+      "level": "Foundational",
+      "source": "cc",
+      "eligibility": "No prior work experience required.",
+      "skills": [
+        "network",
+        "security"
+      ]
+    },
+    {
+      "id": "SEC1",
+      "provider": "TryHackMe",
+      "level": "Foundational",
+      "source": "thm-cert",
+      "eligibility": "Check the current provider exam guide.",
+      "skills": [
+        "network",
+        "security"
+      ]
+    },
+    {
+      "id": "SAL1",
+      "provider": "TryHackMe",
+      "level": "Practitioner",
+      "source": "thm-cert",
+      "eligibility": "Practical analyst exam; check current exam conditions.",
+      "skills": [
+        "detection",
+        "response"
+      ]
+    },
+    {
+      "id": "SAL2",
+      "provider": "TryHackMe",
+      "level": "Advanced",
+      "source": "thm-cert",
+      "eligibility": "Build SOC foundations first; verify current requirements.",
+      "skills": [
+        "detection",
+        "response",
+        "intel"
+      ]
+    },
+    {
+      "id": "PT1",
+      "provider": "TryHackMe",
+      "level": "Practitioner",
+      "source": "thm-cert",
+      "eligibility": "Practical penetration-testing credential; verify exam scope.",
+      "skills": [
+        "offense",
+        "appsec"
+      ]
+    },
+    {
+      "id": "AI1",
+      "provider": "TryHackMe",
+      "level": "AI specialist",
+      "source": "thm-ai",
+      "eligibility": "Security foundations recommended; practical AI exam.",
+      "skills": [
+        "ai",
+        "aisec"
+      ]
+    },
+    {
+      "id": "BTL1",
+      "provider": "Centri / Security Blue Team",
+      "level": "Practitioner",
+      "source": "centri",
+      "eligibility": "Junior defensive certification; verify package terms.",
+      "skills": [
+        "detection",
+        "response",
+        "intel"
+      ]
+    },
+    {
+      "id": "CPTS",
+      "provider": "Hack The Box",
+      "level": "Practitioner",
+      "source": "htb",
+      "eligibility": "Complete relevant HTB preparation; check current certification requirements.",
+      "skills": [
+        "offense",
+        "network"
+      ]
+    },
+    {
+      "id": "COAE",
+      "provider": "Hack The Box",
+      "level": "AI specialist",
+      "source": "coae",
+      "eligibility": "Specialized offensive AI preparation; verify current eligibility.",
+      "skills": [
+        "offense",
+        "ai",
+        "aisec"
+      ]
+    },
+    {
+      "id": "GAIPS",
+      "provider": "GIAC",
+      "level": "AI specialist",
+      "source": "gaips",
+      "eligibility": "Affiliated training SEC545; training and certification are distinct.",
+      "skills": [
+        "appsec",
+        "aisec",
+        "cloud"
+      ]
+    },
+    {
+      "id": "GASAE",
+      "provider": "GIAC",
+      "level": "AI specialist",
+      "source": "sans-ai",
+      "eligibility": "Affiliated training SEC598; confirm exam conditions.",
+      "skills": [
+        "python",
+        "judgment",
+        "ai"
+      ]
+    },
+    {
+      "id": "GOAA",
+      "provider": "GIAC",
+      "level": "AI specialist",
+      "source": "sans-ai",
+      "eligibility": "Affiliated training SEC535; confirm exam conditions.",
+      "skills": [
+        "offense",
+        "aisec"
+      ]
+    },
+    {
+      "id": "GMLE",
+      "provider": "GIAC",
+      "level": "AI specialist",
+      "source": "sans-ai",
+      "eligibility": "Affiliated training SEC595; strong programming and data foundations useful.",
+      "skills": [
+        "python",
+        "ai"
+      ]
+    },
+    {
+      "id": "GCIH",
+      "provider": "GIAC",
+      "level": "Practitioner",
+      "source": "giac",
+      "eligibility": "Incident-handling credential; verify current syllabus.",
+      "skills": [
+        "response",
+        "offense"
+      ]
+    },
+    {
+      "id": "GCFA",
+      "provider": "GIAC",
+      "level": "Advanced",
+      "source": "giac",
+      "eligibility": "Advanced forensics credential; prior DFIR practice recommended.",
+      "skills": [
+        "response",
+        "detection"
+      ]
+    },
+    {
+      "id": "GCTI",
+      "provider": "GIAC",
+      "level": "Advanced",
+      "source": "giac",
+      "eligibility": "Threat-intelligence credential; verify current syllabus.",
+      "skills": [
+        "intel",
+        "risk"
+      ]
+    },
+    {
+      "id": "GICSP",
+      "provider": "GIAC",
+      "level": "Practitioner",
+      "source": "gicsp",
+      "eligibility": "Industrial security credential; additional safety and site experience needed.",
+      "skills": [
+        "ot",
+        "network"
+      ]
+    },
+    {
+      "id": "CCSP",
+      "provider": "ISC2",
+      "level": "Experienced",
+      "source": "ccsp",
+      "eligibility": "Experience and endorsement requirements apply; verify eligibility.",
+      "skills": [
+        "cloud",
+        "privacy",
+        "risk"
+      ]
+    },
+    {
+      "id": "CISSP",
+      "provider": "ISC2",
+      "level": "Experienced",
+      "source": "cissp",
+      "eligibility": "Experience and endorsement requirements apply; verify eligibility.",
+      "skills": [
+        "security",
+        "risk",
+        "identity"
+      ]
+    },
+    {
+      "id": "AIGP",
+      "provider": "IAPP",
+      "level": "AI governance",
+      "source": "aigp",
+      "eligibility": "AI governance scope; verify current exam and maintenance policies.",
+      "skills": [
+        "risk",
+        "privacy",
+        "ai"
+      ]
+    },
+    {
+      "id": "AAISM",
+      "provider": "ISACA",
+      "level": "Experienced",
+      "source": "aaism",
+      "eligibility": "Requires an active CISM or CISSP.",
+      "skills": [
+        "risk",
+        "ai",
+        "aisec"
+      ]
+    },
+    {
+      "id": "SC-300",
+      "provider": "Microsoft",
+      "level": "Practitioner",
+      "source": "sc300",
+      "eligibility": "Vendor-specific identity credential; check the current exam guide.",
+      "skills": [
+        "identity",
+        "cloud"
+      ]
+    }
+  ],
+  "domains": [
+    {
+      "id": "soc",
+      "name": "Security operations",
+      "symbol": "◉",
+      "base": "SOC Analyst",
+      "ai": "AI-Augmented SOC Analyst",
+      "kind": "Evolving role",
+      "nice": "Defensive Cybersecurity",
+      "ecsf": "Cyber Incident Responder",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "detection": 3,
+        "response": 2,
+        "intel": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "core": [
+        "detection",
+        "response"
+      ],
+      "certs": [
+        "SAL1",
+        "BTL1",
+        "SAL2",
+        "GASAE"
+      ],
+      "track": "Utilize AI",
+      "csf": [
+        "Detect",
+        "Respond"
+      ],
+      "attack": [
+        "T1059",
+        "T1078"
+      ],
+      "aiwork": "Verify AI alert summaries against raw telemetry, handle malicious alert content, and define approval gates for automated response.",
+      "project": "Investigate a synthetic alert queue with and without an AI assistant. Record false conclusions, evidence checks, escalation decisions, and measured time/quality differences.",
+      "sources": [
+        "htb-aug",
+        "thm",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "dfir",
+      "name": "Incident response & forensics",
+      "symbol": "⌕",
+      "base": "Incident Responder",
+      "ai": "AI-Enabled DFIR Analyst",
+      "kind": "Evolving role",
+      "nice": "Incident Response",
+      "ecsf": "Cyber Incident Responder",
+      "requirements": {
+        "network": 3,
+        "security": 2,
+        "response": 3,
+        "detection": 2,
+        "python": 2,
+        "privacy": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "core": [
+        "response"
+      ],
+      "certs": [
+        "GCIH",
+        "GCFA",
+        "GASAE"
+      ],
+      "track": "Utilize AI",
+      "csf": [
+        "Respond",
+        "Recover"
+      ],
+      "attack": [
+        "T1059",
+        "T1003"
+      ],
+      "aiwork": "Use local AI for triage while preserving chain of custody, reproducible timelines, and a fallback when model output is unreliable.",
+      "project": "Build a reproducible incident timeline from synthetic artifacts; annotate every AI assertion with a source artifact and preserve an evidence-handling log.",
+      "sources": [
+        "sans-ai",
+        "offsec-path",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "offensive",
+      "name": "Offensive security",
+      "symbol": "⌁",
+      "base": "Penetration Tester",
+      "ai": "AI Red Team Engineer",
+      "kind": "Specialist title",
+      "nice": "Vulnerability Analysis",
+      "ecsf": "Penetration Tester",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 3,
+        "appsec": 3,
+        "python": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "core": [
+        "offense",
+        "appsec"
+      ],
+      "certs": [
+        "PT1",
+        "CPTS",
+        "AI1",
+        "COAE",
+        "GOAA"
+      ],
+      "track": "Protect AI",
+      "csf": [
+        "Identify",
+        "Protect"
+      ],
+      "attack": [
+        "T1190",
+        "T1059"
+      ],
+      "aiwork": "Test AI applications, retrieval boundaries, data integrity, and agent permissions within an authorized scope.",
+      "project": "Deliver an authorized AI application assessment with reproducible injection cases, trust-boundary findings, severity rationale, and retest evidence.",
+      "sources": [
+        "sans-career",
+        "htb",
+        "coae",
+        "thm-ai"
+      ]
+    },
+    {
+      "id": "appsec",
+      "name": "Application security & DevSecOps",
+      "symbol": "⌘",
+      "base": "Application Security Engineer",
+      "ai": "AI Application Security Engineer",
+      "kind": "Evolving role",
+      "nice": "Software Security Assessment",
+      "ecsf": "Cybersecurity Implementer",
+      "requirements": {
+        "security": 3,
+        "python": 3,
+        "appsec": 3,
+        "cloud": 2,
+        "identity": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "core": [
+        "appsec",
+        "python"
+      ],
+      "certs": [
+        "GAIPS",
+        "AI1",
+        "CISSP"
+      ],
+      "track": "Protect AI",
+      "csf": [
+        "Protect",
+        "Identify"
+      ],
+      "attack": [
+        "T1190"
+      ],
+      "aiwork": "Threat-model RAG and agent applications; enforce output handling, server-side authorization, and secure dependency pipelines.",
+      "project": "Create a RAG application threat model and CI evaluation suite that tests cross-user retrieval, unsafe outputs, and tool authorization.",
+      "sources": [
+        "portswigger",
+        "sans-ai",
+        "saif"
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud & platform security",
+      "symbol": "☁",
+      "base": "Cloud Security Engineer",
+      "ai": "AI Platform Security Engineer",
+      "kind": "Evolving role",
+      "nice": "Systems Security Analysis",
+      "ecsf": "Cybersecurity Implementer",
+      "requirements": {
+        "network": 2,
+        "security": 3,
+        "cloud": 3,
+        "identity": 3,
+        "python": 2,
+        "privacy": 2,
+        "ai": 3,
+        "aisec": 2,
+        "judgment": 2
+      },
+      "core": [
+        "cloud",
+        "identity"
+      ],
+      "certs": [
+        "CCSP",
+        "GAIPS",
+        "SC-300"
+      ],
+      "track": "Protect AI",
+      "csf": [
+        "Protect",
+        "Detect"
+      ],
+      "attack": [
+        "T1078",
+        "T1190"
+      ],
+      "aiwork": "Secure model endpoints, workload identities, secrets, model artifacts, and AI supply chains in cloud environments.",
+      "project": "Design a model-serving platform with isolated identities, signed artifacts, audit logs, endpoint access tests, and a rollback runbook.",
+      "sources": [
+        "saif",
+        "sans-ai",
+        "offsec-path"
+      ]
+    },
+    {
+      "id": "iam",
+      "name": "Identity & access management",
+      "symbol": "⚿",
+      "base": "Identity Security Engineer",
+      "ai": "Agent Identity & Access Engineer",
+      "kind": "Proposed specialization",
+      "nice": "Systems Security Analysis",
+      "ecsf": "Cybersecurity Implementer",
+      "requirements": {
+        "security": 3,
+        "identity": 4,
+        "cloud": 3,
+        "appsec": 2,
+        "python": 2,
+        "ai": 2,
+        "aisec": 2,
+        "judgment": 3
+      },
+      "core": [
+        "identity"
+      ],
+      "certs": [
+        "SC-300",
+        "CCSP",
+        "GAIPS"
+      ],
+      "track": "Protect AI",
+      "csf": [
+        "Protect",
+        "Govern"
+      ],
+      "attack": [
+        "T1078"
+      ],
+      "aiwork": "Bind agents to scoped workload identities, minimize delegated privileges, and require authorization outside the model.",
+      "project": "Demonstrate an agent with short-lived credentials, a tool allowlist, approval gates, revocation tests, and an auditable identity trail.",
+      "sources": [
+        "sc300",
+        "owasp",
+        "saif"
+      ]
+    },
+    {
+      "id": "grc",
+      "name": "Governance, risk & compliance",
+      "symbol": "▦",
+      "base": "Cybersecurity Risk Analyst",
+      "ai": "AI Governance & Security Risk Lead",
+      "kind": "Specialist title",
+      "nice": "Cybersecurity Policy and Planning",
+      "ecsf": "Cybersecurity Risk Manager",
+      "requirements": {
+        "security": 3,
+        "risk": 4,
+        "privacy": 3,
+        "ai": 3,
+        "aisec": 2,
+        "judgment": 4
+      },
+      "core": [
+        "risk"
+      ],
+      "certs": [
+        "AIGP",
+        "CISSP",
+        "AAISM"
+      ],
+      "track": "Govern AI",
+      "csf": [
+        "Govern",
+        "Identify"
+      ],
+      "attack": [],
+      "aiwork": "Maintain AI inventories and risk ownership, set evaluation gates, and gather control evidence throughout the AI lifecycle.",
+      "project": "Create an AI system inventory, risk register, impact assessment, accountable approval workflow, and evidence-backed monitoring plan.",
+      "sources": [
+        "sans-career",
+        "airmf",
+        "iso",
+        "aigp"
+      ]
+    },
+    {
+      "id": "intel",
+      "name": "Threat intelligence & hunting",
+      "symbol": "◎",
+      "base": "Cyber Threat Intelligence Analyst",
+      "ai": "AI-Augmented Threat Intelligence Analyst",
+      "kind": "Evolving role",
+      "nice": "Threat Analysis",
+      "ecsf": "Cyber Threat Intelligence Specialist",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "intel": 4,
+        "detection": 3,
+        "python": 2,
+        "ai": 2,
+        "aisec": 2,
+        "judgment": 3
+      },
+      "core": [
+        "intel",
+        "detection"
+      ],
+      "certs": [
+        "GCTI",
+        "SAL2",
+        "GASAE"
+      ],
+      "track": "Utilize AI",
+      "csf": [
+        "Identify",
+        "Detect"
+      ],
+      "attack": [
+        "T1059",
+        "T1190"
+      ],
+      "aiwork": "Validate AI-enriched intelligence, separate observations from inference, and develop hunts for AI-related adversary behavior.",
+      "project": "Produce a sourced threat brief and executable hunt plan; record source confidence, ATT&CK/ATLAS associations, and model-generated errors.",
+      "sources": [
+        "atlas",
+        "attack",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "privacy",
+      "name": "Data security & privacy",
+      "symbol": "▤",
+      "base": "Data Security Analyst",
+      "ai": "AI Data Security & Privacy Engineer",
+      "kind": "Proposed specialization",
+      "nice": "Privacy Compliance",
+      "ecsf": "Cyber Legal, Policy & Compliance Officer",
+      "requirements": {
+        "security": 3,
+        "privacy": 4,
+        "risk": 3,
+        "identity": 2,
+        "cloud": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "core": [
+        "privacy"
+      ],
+      "certs": [
+        "AIGP",
+        "CCSP",
+        "GAIPS"
+      ],
+      "track": "Govern AI",
+      "csf": [
+        "Govern",
+        "Protect"
+      ],
+      "attack": [
+        "T1005"
+      ],
+      "aiwork": "Control AI data use, validate retrieval isolation, evaluate leakage, and manage retention across training and inference.",
+      "project": "Document a synthetic-data lineage map; test cross-user retrieval and sensitive-data output with a minimized retention and deletion design.",
+      "sources": [
+        "owasp",
+        "airmf",
+        "aigp"
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Security architecture",
+      "symbol": "◇",
+      "base": "Security Architect",
+      "ai": "AI Security Architect",
+      "kind": "Specialist title",
+      "nice": "Cybersecurity Architecture",
+      "ecsf": "Cybersecurity Architect",
+      "requirements": {
+        "network": 3,
+        "security": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "identity": 3,
+        "risk": 3,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 4
+      },
+      "core": [
+        "security",
+        "cloud",
+        "appsec"
+      ],
+      "certs": [
+        "CISSP",
+        "CCSP",
+        "GAIPS",
+        "AAISM"
+      ],
+      "track": "Protect AI",
+      "csf": [
+        "Govern",
+        "Identify",
+        "Protect"
+      ],
+      "attack": [
+        "T1190",
+        "T1078"
+      ],
+      "aiwork": "Design AI trust boundaries and control layers spanning models, retrieval, tools, identities, and organizational accountability.",
+      "project": "Deliver an AI reference architecture with abuse cases, control ownership, failure modes, evaluation criteria, and a residual-risk decision record.",
+      "sources": [
+        "sans-career",
+        "saif",
+        "airmf"
+      ]
+    },
+    {
+      "id": "ot",
+      "name": "OT & critical infrastructure",
+      "symbol": "⌗",
+      "base": "OT Security Engineer",
+      "ai": "AI-Aware OT Security Engineer",
+      "kind": "Proposed specialization",
+      "nice": "Operational Technology Cybersecurity Engineering",
+      "ecsf": "Cybersecurity Implementer",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "ot": 4,
+        "response": 2,
+        "risk": 3,
+        "ai": 2,
+        "judgment": 4
+      },
+      "core": [
+        "ot",
+        "network"
+      ],
+      "certs": [
+        "GICSP",
+        "CISSP"
+      ],
+      "track": "Protect AI",
+      "csf": [
+        "Protect",
+        "Detect",
+        "Recover"
+      ],
+      "attack": [],
+      "aiwork": "Evaluate industrial AI use with safety constraints, deterministic fallback, isolated test environments, and human override.",
+      "project": "Create a tabletop and isolated simulation for an AI-assisted industrial monitoring failure. Demonstrate safe fallback, segmentation, and change approval.",
+      "sources": [
+        "gicsp",
+        "attack",
+        "airmf"
+      ]
+    },
+    {
+      "id": "vulnerability",
+      "name": "Exposure & vulnerability management",
+      "symbol": "△",
+      "base": "Vulnerability Analyst",
+      "ai": "AI-Assisted Exposure Analyst",
+      "kind": "Proposed specialization",
+      "nice": "Vulnerability Analysis",
+      "ecsf": "Cybersecurity Implementer",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 2,
+        "appsec": 2,
+        "risk": 3,
+        "python": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "core": [
+        "offense",
+        "risk"
+      ],
+      "certs": [
+        "PT1",
+        "CISSP",
+        "GASAE"
+      ],
+      "track": "Utilize AI",
+      "csf": [
+        "Identify",
+        "Protect"
+      ],
+      "attack": [
+        "T1190"
+      ],
+      "aiwork": "Validate AI findings, add asset and exploitability context, prioritize fixes, and check remediation rather than trusting generated severity.",
+      "project": "Build a synthetic exposure register with validated findings, contextual priorities, remediation owners, and retest evidence.",
+      "sources": [
+        "offsec-path",
+        "sans-ai",
+        "csf"
+      ]
+    },
+    {
+      "id": "mlsec",
+      "name": "AI & ML security engineering",
+      "symbol": "✳",
+      "base": "Security Automation Engineer",
+      "ai": "AI/ML Security Engineer",
+      "kind": "Specialist title",
+      "nice": "Secure Systems Development",
+      "ecsf": "Cybersecurity Researcher",
+      "requirements": {
+        "security": 3,
+        "python": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "privacy": 3,
+        "ai": 4,
+        "aisec": 4,
+        "judgment": 3
+      },
+      "core": [
+        "python",
+        "ai"
+      ],
+      "certs": [
+        "GMLE",
+        "GAIPS",
+        "COAE",
+        "GASAE"
+      ],
+      "track": "Protect AI",
+      "csf": [
+        "Protect",
+        "Detect",
+        "Respond"
+      ],
+      "attack": [
+        "T1190"
+      ],
+      "aiwork": "Secure data/model pipelines, evaluate adversarial behavior, build reproducible security evaluations, and monitor deployment drift.",
+      "project": "Build a small reproducible ML security evaluation harness with trusted data provenance, baseline metrics, adversarial cases, and regression gates.",
+      "sources": [
+        "sans-career",
+        "sans-ai",
+        "saif",
+        "atlas"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "id": "soc-core",
+      "domain": "soc",
+      "title": "SOC Analyst",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "detection": 3,
+        "response": 2,
+        "intel": 2
+      },
+      "certs": [
+        "SAL1",
+        "BTL1",
+        "SAL2"
+      ],
+      "description": "Build the core tradecraft for security operations.",
+      "sources": [
+        "htb-aug",
+        "thm",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "soc-ai",
+      "domain": "soc",
+      "title": "AI-Augmented SOC Analyst",
+      "track": "Utilize AI",
+      "type": "Evolving role",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "detection": 3,
+        "response": 2,
+        "intel": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "certs": [
+        "SAL1",
+        "BTL1",
+        "SAL2",
+        "GASAE"
+      ],
+      "description": "Verify AI alert summaries against raw telemetry, handle malicious alert content, and define approval gates for automated response.",
+      "sources": [
+        "htb-aug",
+        "thm",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "dfir-core",
+      "domain": "dfir",
+      "title": "Incident Responder",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 3,
+        "security": 2,
+        "response": 3,
+        "detection": 2,
+        "python": 2,
+        "privacy": 2
+      },
+      "certs": [
+        "GCIH",
+        "GCFA"
+      ],
+      "description": "Build the core tradecraft for incident response & forensics.",
+      "sources": [
+        "sans-ai",
+        "offsec-path",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "dfir-ai",
+      "domain": "dfir",
+      "title": "AI-Enabled DFIR Analyst",
+      "track": "Utilize AI",
+      "type": "Evolving role",
+      "requirements": {
+        "network": 3,
+        "security": 2,
+        "response": 3,
+        "detection": 2,
+        "python": 2,
+        "privacy": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "certs": [
+        "GCIH",
+        "GCFA",
+        "GASAE"
+      ],
+      "description": "Use local AI for triage while preserving chain of custody, reproducible timelines, and a fallback when model output is unreliable.",
+      "sources": [
+        "sans-ai",
+        "offsec-path",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "offensive-core",
+      "domain": "offensive",
+      "title": "Penetration Tester",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 3,
+        "appsec": 3,
+        "python": 2
+      },
+      "certs": [
+        "PT1",
+        "CPTS"
+      ],
+      "description": "Build the core tradecraft for offensive security.",
+      "sources": [
+        "sans-career",
+        "htb",
+        "coae",
+        "thm-ai"
+      ]
+    },
+    {
+      "id": "offensive-ai",
+      "domain": "offensive",
+      "title": "AI Red Team Engineer",
+      "track": "Protect AI",
+      "type": "Specialist title",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 3,
+        "appsec": 3,
+        "python": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "certs": [
+        "PT1",
+        "CPTS",
+        "AI1",
+        "COAE",
+        "GOAA"
+      ],
+      "description": "Test AI applications, retrieval boundaries, data integrity, and agent permissions within an authorized scope.",
+      "sources": [
+        "sans-career",
+        "htb",
+        "coae",
+        "thm-ai"
+      ]
+    },
+    {
+      "id": "appsec-core",
+      "domain": "appsec",
+      "title": "Application Security Engineer",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "security": 3,
+        "python": 3,
+        "appsec": 3,
+        "cloud": 2,
+        "identity": 2
+      },
+      "certs": [
+        "CISSP"
+      ],
+      "description": "Build the core tradecraft for application security & devsecops.",
+      "sources": [
+        "portswigger",
+        "sans-ai",
+        "saif"
+      ]
+    },
+    {
+      "id": "appsec-ai",
+      "domain": "appsec",
+      "title": "AI Application Security Engineer",
+      "track": "Protect AI",
+      "type": "Evolving role",
+      "requirements": {
+        "security": 3,
+        "python": 3,
+        "appsec": 3,
+        "cloud": 2,
+        "identity": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "certs": [
+        "GAIPS",
+        "AI1",
+        "CISSP"
+      ],
+      "description": "Threat-model RAG and agent applications; enforce output handling, server-side authorization, and secure dependency pipelines.",
+      "sources": [
+        "portswigger",
+        "sans-ai",
+        "saif"
+      ]
+    },
+    {
+      "id": "cloud-core",
+      "domain": "cloud",
+      "title": "Cloud Security Engineer",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 2,
+        "security": 3,
+        "cloud": 3,
+        "identity": 3,
+        "python": 2,
+        "privacy": 2
+      },
+      "certs": [
+        "CCSP",
+        "SC-300"
+      ],
+      "description": "Build the core tradecraft for cloud & platform security.",
+      "sources": [
+        "saif",
+        "sans-ai",
+        "offsec-path"
+      ]
+    },
+    {
+      "id": "cloud-ai",
+      "domain": "cloud",
+      "title": "AI Platform Security Engineer",
+      "track": "Protect AI",
+      "type": "Evolving role",
+      "requirements": {
+        "network": 2,
+        "security": 3,
+        "cloud": 3,
+        "identity": 3,
+        "python": 2,
+        "privacy": 2,
+        "ai": 3,
+        "aisec": 2,
+        "judgment": 2
+      },
+      "certs": [
+        "CCSP",
+        "GAIPS",
+        "SC-300"
+      ],
+      "description": "Secure model endpoints, workload identities, secrets, model artifacts, and AI supply chains in cloud environments.",
+      "sources": [
+        "saif",
+        "sans-ai",
+        "offsec-path"
+      ]
+    },
+    {
+      "id": "iam-core",
+      "domain": "iam",
+      "title": "Identity Security Engineer",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "security": 3,
+        "identity": 4,
+        "cloud": 3,
+        "appsec": 2,
+        "python": 2
+      },
+      "certs": [
+        "SC-300",
+        "CCSP"
+      ],
+      "description": "Build the core tradecraft for identity & access management.",
+      "sources": [
+        "sc300",
+        "owasp",
+        "saif"
+      ]
+    },
+    {
+      "id": "iam-ai",
+      "domain": "iam",
+      "title": "Agent Identity & Access Engineer",
+      "track": "Protect AI",
+      "type": "Proposed specialization",
+      "requirements": {
+        "security": 3,
+        "identity": 4,
+        "cloud": 3,
+        "appsec": 2,
+        "python": 2,
+        "ai": 2,
+        "aisec": 2,
+        "judgment": 3
+      },
+      "certs": [
+        "SC-300",
+        "CCSP",
+        "GAIPS"
+      ],
+      "description": "Bind agents to scoped workload identities, minimize delegated privileges, and require authorization outside the model.",
+      "sources": [
+        "sc300",
+        "owasp",
+        "saif"
+      ]
+    },
+    {
+      "id": "grc-core",
+      "domain": "grc",
+      "title": "Cybersecurity Risk Analyst",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "security": 3,
+        "risk": 4,
+        "privacy": 3
+      },
+      "certs": [
+        "CISSP"
+      ],
+      "description": "Build the core tradecraft for governance, risk & compliance.",
+      "sources": [
+        "sans-career",
+        "airmf",
+        "iso",
+        "aigp"
+      ]
+    },
+    {
+      "id": "grc-ai",
+      "domain": "grc",
+      "title": "AI Governance & Security Risk Lead",
+      "track": "Govern AI",
+      "type": "Specialist title",
+      "requirements": {
+        "security": 3,
+        "risk": 4,
+        "privacy": 3,
+        "ai": 3,
+        "aisec": 2,
+        "judgment": 4
+      },
+      "certs": [
+        "AIGP",
+        "CISSP",
+        "AAISM"
+      ],
+      "description": "Maintain AI inventories and risk ownership, set evaluation gates, and gather control evidence throughout the AI lifecycle.",
+      "sources": [
+        "sans-career",
+        "airmf",
+        "iso",
+        "aigp"
+      ]
+    },
+    {
+      "id": "intel-core",
+      "domain": "intel",
+      "title": "Cyber Threat Intelligence Analyst",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "intel": 4,
+        "detection": 3,
+        "python": 2
+      },
+      "certs": [
+        "GCTI",
+        "SAL2"
+      ],
+      "description": "Build the core tradecraft for threat intelligence & hunting.",
+      "sources": [
+        "atlas",
+        "attack",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "intel-ai",
+      "domain": "intel",
+      "title": "AI-Augmented Threat Intelligence Analyst",
+      "track": "Utilize AI",
+      "type": "Evolving role",
+      "requirements": {
+        "network": 2,
+        "security": 2,
+        "intel": 4,
+        "detection": 3,
+        "python": 2,
+        "ai": 2,
+        "aisec": 2,
+        "judgment": 3
+      },
+      "certs": [
+        "GCTI",
+        "SAL2",
+        "GASAE"
+      ],
+      "description": "Validate AI-enriched intelligence, separate observations from inference, and develop hunts for AI-related adversary behavior.",
+      "sources": [
+        "atlas",
+        "attack",
+        "sans-career"
+      ]
+    },
+    {
+      "id": "privacy-core",
+      "domain": "privacy",
+      "title": "Data Security Analyst",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "security": 3,
+        "privacy": 4,
+        "risk": 3,
+        "identity": 2,
+        "cloud": 2
+      },
+      "certs": [
+        "CCSP"
+      ],
+      "description": "Build the core tradecraft for data security & privacy.",
+      "sources": [
+        "owasp",
+        "airmf",
+        "aigp"
+      ]
+    },
+    {
+      "id": "privacy-ai",
+      "domain": "privacy",
+      "title": "AI Data Security & Privacy Engineer",
+      "track": "Govern AI",
+      "type": "Proposed specialization",
+      "requirements": {
+        "security": 3,
+        "privacy": 4,
+        "risk": 3,
+        "identity": 2,
+        "cloud": 2,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 3
+      },
+      "certs": [
+        "AIGP",
+        "CCSP",
+        "GAIPS"
+      ],
+      "description": "Control AI data use, validate retrieval isolation, evaluate leakage, and manage retention across training and inference.",
+      "sources": [
+        "owasp",
+        "airmf",
+        "aigp"
+      ]
+    },
+    {
+      "id": "architecture-core",
+      "domain": "architecture",
+      "title": "Security Architect",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 3,
+        "security": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "identity": 3,
+        "risk": 3
+      },
+      "certs": [
+        "CISSP",
+        "CCSP"
+      ],
+      "description": "Build the core tradecraft for security architecture.",
+      "sources": [
+        "sans-career",
+        "saif",
+        "airmf"
+      ]
+    },
+    {
+      "id": "architecture-ai",
+      "domain": "architecture",
+      "title": "AI Security Architect",
+      "track": "Protect AI",
+      "type": "Specialist title",
+      "requirements": {
+        "network": 3,
+        "security": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "identity": 3,
+        "risk": 3,
+        "ai": 3,
+        "aisec": 3,
+        "judgment": 4
+      },
+      "certs": [
+        "CISSP",
+        "CCSP",
+        "GAIPS",
+        "AAISM"
+      ],
+      "description": "Design AI trust boundaries and control layers spanning models, retrieval, tools, identities, and organizational accountability.",
+      "sources": [
+        "sans-career",
+        "saif",
+        "airmf"
+      ]
+    },
+    {
+      "id": "ot-core",
+      "domain": "ot",
+      "title": "OT Security Engineer",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "ot": 4,
+        "response": 2,
+        "risk": 3
+      },
+      "certs": [
+        "GICSP",
+        "CISSP"
+      ],
+      "description": "Build the core tradecraft for ot & critical infrastructure.",
+      "sources": [
+        "gicsp",
+        "attack",
+        "airmf"
+      ]
+    },
+    {
+      "id": "ot-ai",
+      "domain": "ot",
+      "title": "AI-Aware OT Security Engineer",
+      "track": "Protect AI",
+      "type": "Proposed specialization",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "ot": 4,
+        "response": 2,
+        "risk": 3,
+        "ai": 2,
+        "judgment": 4
+      },
+      "certs": [
+        "GICSP",
+        "CISSP"
+      ],
+      "description": "Evaluate industrial AI use with safety constraints, deterministic fallback, isolated test environments, and human override.",
+      "sources": [
+        "gicsp",
+        "attack",
+        "airmf"
+      ]
+    },
+    {
+      "id": "vulnerability-core",
+      "domain": "vulnerability",
+      "title": "Vulnerability Analyst",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 2,
+        "appsec": 2,
+        "risk": 3,
+        "python": 2
+      },
+      "certs": [
+        "PT1",
+        "CISSP"
+      ],
+      "description": "Build the core tradecraft for exposure & vulnerability management.",
+      "sources": [
+        "offsec-path",
+        "sans-ai",
+        "csf"
+      ]
+    },
+    {
+      "id": "vulnerability-ai",
+      "domain": "vulnerability",
+      "title": "AI-Assisted Exposure Analyst",
+      "track": "Utilize AI",
+      "type": "Proposed specialization",
+      "requirements": {
+        "network": 3,
+        "security": 3,
+        "offense": 2,
+        "appsec": 2,
+        "risk": 3,
+        "python": 2,
+        "ai": 2,
+        "judgment": 3
+      },
+      "certs": [
+        "PT1",
+        "CISSP",
+        "GASAE"
+      ],
+      "description": "Validate AI findings, add asset and exploitability context, prioritize fixes, and check remediation rather than trusting generated severity.",
+      "sources": [
+        "offsec-path",
+        "sans-ai",
+        "csf"
+      ]
+    },
+    {
+      "id": "mlsec-core",
+      "domain": "mlsec",
+      "title": "Security Automation Engineer",
+      "track": "Core cyber",
+      "type": "Established role",
+      "requirements": {
+        "security": 3,
+        "python": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "privacy": 3
+      },
+      "certs": [],
+      "description": "Build the core tradecraft for ai & ml security engineering.",
+      "sources": [
+        "sans-career",
+        "sans-ai",
+        "saif",
+        "atlas"
+      ]
+    },
+    {
+      "id": "mlsec-ai",
+      "domain": "mlsec",
+      "title": "AI/ML Security Engineer",
+      "track": "Protect AI",
+      "type": "Specialist title",
+      "requirements": {
+        "security": 3,
+        "python": 4,
+        "appsec": 3,
+        "cloud": 3,
+        "privacy": 3,
+        "ai": 4,
+        "aisec": 4,
+        "judgment": 3
+      },
+      "certs": [
+        "GMLE",
+        "GAIPS",
+        "COAE",
+        "GASAE"
+      ],
+      "description": "Secure data/model pipelines, evaluate adversarial behavior, build reproducible security evaluations, and monitor deployment drift.",
+      "sources": [
+        "sans-career",
+        "sans-ai",
+        "saif",
+        "atlas"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "network-1",
+      "title": "Systems & network essentials",
+      "skill": "network",
+      "level": 2,
+      "hours": 18,
+      "stage": 0,
+      "prereqs": [],
+      "source": "thm",
+      "deliverable": "Explain a packet capture, DNS lookup, process tree, and file permissions in a short lab notebook.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "security-1",
+      "title": "Security principles in practice",
+      "skill": "security",
+      "level": 2,
+      "hours": 12,
+      "stage": 0,
+      "prereqs": [],
+      "source": "cc",
+      "deliverable": "Write a scoped lab authorization, an asset inventory, and a simple risk-to-control explanation.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "python-1",
+      "title": "Automate a small security task",
+      "skill": "python",
+      "level": 2,
+      "hours": 16,
+      "stage": 0,
+      "prereqs": [
+        "security-1"
+      ],
+      "source": "offsec-path",
+      "deliverable": "Create a tested script that parses synthetic logs and documents inputs, errors, and outputs.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "ai-1",
+      "title": "AI literacy for security practitioners",
+      "skill": "ai",
+      "level": 2,
+      "hours": 12,
+      "stage": 1,
+      "prereqs": [
+        "security-1"
+      ],
+      "source": "htb",
+      "deliverable": "Draw the boundaries between model, retrieval, tools, and host code; record five model limitations.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "judgment-1",
+      "title": "Verify outputs & bound agent autonomy",
+      "skill": "judgment",
+      "level": 3,
+      "hours": 10,
+      "stage": 1,
+      "prereqs": [
+        "ai-1"
+      ],
+      "source": "htb-aug",
+      "deliverable": "Audit ten synthetic AI claims against evidence and implement a human approval gate for sensitive actions.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "detection-1",
+      "title": "Investigate telemetry & build a detection",
+      "skill": "detection",
+      "level": 3,
+      "hours": 24,
+      "stage": 2,
+      "prereqs": [
+        "network-1",
+        "security-1"
+      ],
+      "source": "letsdefend",
+      "deliverable": "Write and test a detection query; include false positives, expected fields, and evidence references.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "response-1",
+      "title": "Reconstruct an incident & justify containment",
+      "skill": "response",
+      "level": 3,
+      "hours": 24,
+      "stage": 2,
+      "prereqs": [
+        "network-1",
+        "security-1"
+      ],
+      "source": "offsec-path",
+      "deliverable": "Deliver an artifact-backed timeline, triage log, containment plan, and recovery checks.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "offense-1",
+      "title": "Run an authorized security assessment",
+      "skill": "offense",
+      "level": 3,
+      "hours": 32,
+      "stage": 2,
+      "prereqs": [
+        "network-1",
+        "security-1"
+      ],
+      "source": "htb",
+      "deliverable": "Produce a scoped test report with reproducible findings, mitigations, and retest outcomes.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "appsec-1",
+      "title": "Threat-model & test a web API",
+      "skill": "appsec",
+      "level": 3,
+      "hours": 26,
+      "stage": 2,
+      "prereqs": [
+        "security-1",
+        "network-1"
+      ],
+      "source": "portswigger",
+      "deliverable": "Document trust boundaries and test input handling, authorization, and unsafe downstream actions.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "cloud-1",
+      "title": "Secure a workload & its deployment pipeline",
+      "skill": "cloud",
+      "level": 3,
+      "hours": 28,
+      "stage": 2,
+      "prereqs": [
+        "network-1",
+        "security-1"
+      ],
+      "source": "offsec-path",
+      "deliverable": "Review an example infrastructure configuration and demonstrate access, secret, logging, and rollback controls.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "identity-1",
+      "title": "Design least-privilege access",
+      "skill": "identity",
+      "level": 3,
+      "hours": 18,
+      "stage": 2,
+      "prereqs": [
+        "security-1"
+      ],
+      "source": "sc300",
+      "deliverable": "Create a role/permission matrix with tested deny cases, revocation, and audit evidence.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "risk-1",
+      "title": "Build an evidence-based risk register",
+      "skill": "risk",
+      "level": 3,
+      "hours": 18,
+      "stage": 2,
+      "prereqs": [
+        "security-1"
+      ],
+      "source": "csf",
+      "deliverable": "Connect assets, threats, controls, owners, residual risk, and an explicit acceptance decision.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "intel-1",
+      "title": "Turn intelligence into a testable hunt",
+      "skill": "intel",
+      "level": 3,
+      "hours": 22,
+      "stage": 2,
+      "prereqs": [
+        "network-1",
+        "security-1"
+      ],
+      "source": "attack",
+      "deliverable": "Write a sourced intelligence brief and a testable hunt hypothesis with confidence and counter-evidence.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "privacy-1",
+      "title": "Trace data & prevent disclosure",
+      "skill": "privacy",
+      "level": 3,
+      "hours": 20,
+      "stage": 2,
+      "prereqs": [
+        "security-1"
+      ],
+      "source": "airmf",
+      "deliverable": "Map a synthetic data lifecycle and test minimization, access restrictions, retention, and deletion.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "ot-1",
+      "title": "Model industrial safety & segmentation",
+      "skill": "ot",
+      "level": 3,
+      "hours": 26,
+      "stage": 2,
+      "prereqs": [
+        "network-1",
+        "security-1"
+      ],
+      "source": "gicsp",
+      "deliverable": "Create an isolated OT tabletop with zones, conduits, safety boundaries, and a recovery plan.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "aisec-1",
+      "title": "Test prompt injection & agent boundaries",
+      "skill": "aisec",
+      "level": 3,
+      "hours": 24,
+      "stage": 3,
+      "prereqs": [
+        "ai-1",
+        "appsec-1",
+        "judgment-1"
+      ],
+      "source": "portswigger",
+      "deliverable": "Test an authorized local or training AI application and document injection, retrieval, output, and authorization controls.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "network-advanced",
+      "title": "Advanced practice: Networks & operating systems",
+      "skill": "network",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "network-1"
+      ],
+      "source": "attack",
+      "deliverable": "Demonstrate independent networks & operating systems in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "security-advanced",
+      "title": "Advanced practice: Security foundations",
+      "skill": "security",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "security-1"
+      ],
+      "source": "csf",
+      "deliverable": "Demonstrate independent security foundations in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "python-advanced",
+      "title": "Advanced practice: Python & automation",
+      "skill": "python",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "python-1"
+      ],
+      "source": "nice",
+      "deliverable": "Demonstrate independent python & automation in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "detection-advanced",
+      "title": "Advanced practice: Detection & telemetry",
+      "skill": "detection",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "detection-1"
+      ],
+      "source": "attack",
+      "deliverable": "Demonstrate independent detection & telemetry in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "response-advanced",
+      "title": "Advanced practice: Incident response & forensics",
+      "skill": "response",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "response-1"
+      ],
+      "source": "csf",
+      "deliverable": "Demonstrate independent incident response & forensics in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "offense-advanced",
+      "title": "Advanced practice: Offensive testing",
+      "skill": "offense",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "offense-1"
+      ],
+      "source": "attack",
+      "deliverable": "Demonstrate independent offensive testing in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "appsec-advanced",
+      "title": "Advanced practice: Application & API security",
+      "skill": "appsec",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "appsec-1"
+      ],
+      "source": "owasp",
+      "deliverable": "Demonstrate independent application & api security in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "cloud-advanced",
+      "title": "Advanced practice: Cloud & platform security",
+      "skill": "cloud",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "cloud-1"
+      ],
+      "source": "csf",
+      "deliverable": "Demonstrate independent cloud & platform security in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "identity-advanced",
+      "title": "Advanced practice: Identity & access",
+      "skill": "identity",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "identity-1"
+      ],
+      "source": "cis",
+      "deliverable": "Demonstrate independent identity & access in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "risk-advanced",
+      "title": "Advanced practice: Governance & risk",
+      "skill": "risk",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "risk-1"
+      ],
+      "source": "csf",
+      "deliverable": "Demonstrate independent governance & risk in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "intel-advanced",
+      "title": "Advanced practice: Threat intelligence",
+      "skill": "intel",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "intel-1"
+      ],
+      "source": "attack",
+      "deliverable": "Demonstrate independent threat intelligence in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "privacy-advanced",
+      "title": "Advanced practice: Data protection & privacy",
+      "skill": "privacy",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "privacy-1"
+      ],
+      "source": "owasp",
+      "deliverable": "Demonstrate independent data protection & privacy in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "ot-advanced",
+      "title": "Advanced practice: OT & critical infrastructure",
+      "skill": "ot",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "ot-1"
+      ],
+      "source": "attack",
+      "deliverable": "Demonstrate independent ot & critical infrastructure in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "ai-advanced",
+      "title": "Advanced practice: AI & ML literacy",
+      "skill": "ai",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "ai-1"
+      ],
+      "source": "airmf",
+      "deliverable": "Demonstrate independent ai & ml literacy in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "aisec-advanced",
+      "title": "Advanced practice: Adversarial AI & LLM security",
+      "skill": "aisec",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "aisec-1"
+      ],
+      "source": "atlas",
+      "deliverable": "Demonstrate independent adversarial ai & llm security in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    },
+    {
+      "id": "judgment-advanced",
+      "title": "Advanced practice: AI oversight & verification",
+      "skill": "judgment",
+      "level": 4,
+      "hours": 20,
+      "stage": 3,
+      "prereqs": [
+        "judgment-1"
+      ],
+      "source": "airmf",
+      "deliverable": "Demonstrate independent ai oversight & verification in a new scenario, test failure cases, and obtain a peer review.",
+      "access": "free",
+      "kind": "Original study sprint"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-network",
+      "skill": "network",
+      "prompt": "A name resolves to an address, but the TCP connection times out. What should you check next?",
+      "options": [
+        "Only the DNS zone",
+        "Routing, firewall policy, and whether the service is listening",
+        "The browser language setting"
+      ],
+      "answer": 1,
+      "explanation": "Successful DNS resolution does not establish network reachability or a listening service."
+    },
+    {
+      "id": "q-security",
+      "skill": "security",
+      "prompt": "A lab asks you to test a public IP not listed in the authorization. What is the next step?",
+      "options": [
+        "Test it quietly",
+        "Clarify scope and obtain authorization first",
+        "Use an AI agent so it is automated"
+      ],
+      "answer": 1,
+      "explanation": "Written scope and authorization define what testing is permitted."
+    },
+    {
+      "id": "q-python",
+      "skill": "python",
+      "prompt": "An automated log parser silently drops malformed records. What is the most useful improvement?",
+      "options": [
+        "Ignore them to keep the output clean",
+        "Add validation, explicit error counts, and tests for malformed input",
+        "Ask the model to guarantee correctness"
+      ],
+      "answer": 1,
+      "explanation": "Observable errors and input tests make security automation reviewable and reliable."
+    },
+    {
+      "id": "q-detection",
+      "skill": "detection",
+      "prompt": "An AI assistant says an alert is a false positive. What supports closing it?",
+      "options": [
+        "The confidence language in its answer",
+        "The number of words in the summary",
+        "Raw telemetry and documented checks that support the conclusion"
+      ],
+      "answer": 2,
+      "explanation": "The source evidence and investigation criteria justify the decision."
+    },
+    {
+      "id": "q-response",
+      "skill": "response",
+      "prompt": "Before using AI to analyze an evidence image, what should you establish?",
+      "options": [
+        "The model is popular",
+        "Evidence integrity, approved handling, and a record of transformations",
+        "That the model can write a fluent report"
+      ],
+      "answer": 1,
+      "explanation": "Integrity and controlled handling protect reproducibility and the evidence trail."
+    },
+    {
+      "id": "q-offense",
+      "skill": "offense",
+      "prompt": "An AI agent proposes a destructive test outside the agreed rules. What do you do?",
+      "options": [
+        "Run it because automation is faster",
+        "Block it, document the proposal, and choose an authorized non-destructive test",
+        "Remove logging"
+      ],
+      "answer": 1,
+      "explanation": "An operator retains responsibility for scope and impact."
+    },
+    {
+      "id": "q-appsec",
+      "skill": "appsec",
+      "prompt": "An LLM produces a database query from a user prompt. Where should authorization be enforced?",
+      "options": [
+        "In a polite system prompt alone",
+        "In the application/server with scoped permissions and validated operations",
+        "Only in the UI"
+      ],
+      "answer": 1,
+      "explanation": "The model is not an authorization boundary; server-side controls must enforce permissions."
+    },
+    {
+      "id": "q-cloud",
+      "skill": "cloud",
+      "prompt": "How should a model-serving workload access its data store?",
+      "options": [
+        "Shared permanent administrator keys",
+        "Workload identity with scoped permissions and managed credential lifetime",
+        "Credentials inside the model prompt"
+      ],
+      "answer": 1,
+      "explanation": "Scoped, managed workload identity reduces exposure and supports audit and revocation."
+    },
+    {
+      "id": "q-identity",
+      "skill": "identity",
+      "prompt": "An agent needs to read one incident queue. Which permission is appropriate?",
+      "options": [
+        "Tenant-wide administrator",
+        "Read-only access scoped to that queue",
+        "All permissions to avoid errors"
+      ],
+      "answer": 1,
+      "explanation": "Grant the minimum permission required by the actual task."
+    },
+    {
+      "id": "q-risk",
+      "skill": "risk",
+      "prompt": "Who should accept material residual AI risk?",
+      "options": [
+        "The AI assistant",
+        "The accountable human risk owner under organizational governance",
+        "Whoever finishes training first"
+      ],
+      "answer": 1,
+      "explanation": "Risk decisions need an accountable owner, evidence, and the organization’s approval process."
+    },
+    {
+      "id": "q-intel",
+      "skill": "intel",
+      "prompt": "A generated threat brief cites a report you cannot locate. What should you do?",
+      "options": [
+        "Publish it with a high-confidence label",
+        "Treat the claim as unverified and seek corroborating original evidence",
+        "Add more generated citations"
+      ],
+      "answer": 1,
+      "explanation": "Traceability and corroboration separate observations from unsupported inference."
+    },
+    {
+      "id": "q-privacy",
+      "skill": "privacy",
+      "prompt": "A retrieval system returns another customer’s private document. What is the primary fix?",
+      "options": [
+        "Ask the model to be more careful",
+        "Enforce tenant/user authorization in retrieval and test isolation",
+        "Increase response randomness"
+      ],
+      "answer": 1,
+      "explanation": "Data access must be enforced before retrieval reaches the model."
+    },
+    {
+      "id": "q-ot",
+      "skill": "ot",
+      "prompt": "An AI monitoring tool recommends restarting a live industrial controller. What comes first?",
+      "options": [
+        "Execute automatically",
+        "Site safety, authorized change control, and validated operating procedures",
+        "An internet tutorial"
+      ],
+      "answer": 1,
+      "explanation": "Safety and site-specific engineering authority govern actions in operational environments."
+    },
+    {
+      "id": "q-ai",
+      "skill": "ai",
+      "prompt": "What best describes retrieval-augmented generation (RAG)?",
+      "options": [
+        "A guarantee that a response is true",
+        "Supplying retrieved context to generation; output still needs verification",
+        "A replacement for access control"
+      ],
+      "answer": 1,
+      "explanation": "Retrieved context can improve grounding, but can also be wrong, unauthorized, or malicious."
+    },
+    {
+      "id": "q-aisec",
+      "skill": "aisec",
+      "prompt": "A retrieved page tells an agent to ignore instructions and export secrets. What is this?",
+      "options": [
+        "A trusted administrator command",
+        "Indirect prompt injection crossing a data/instruction boundary",
+        "A harmless formatting preference"
+      ],
+      "answer": 1,
+      "explanation": "Untrusted retrieved content can contain attacker instructions; host-side permissions and data boundaries matter."
+    },
+    {
+      "id": "q-judgment",
+      "skill": "judgment",
+      "prompt": "What is the strongest evaluation for an autonomous response workflow?",
+      "options": [
+        "A single impressive demo",
+        "Repeated ground-truth scenarios including errors, denied actions, escalation, and recovery",
+        "The model vendor’s popularity"
+      ],
+      "answer": 1,
+      "explanation": "Evaluate success and failure modes against known outcomes and clear authority boundaries."
+    }
+  ],
+  "learningOptions": [
+    {
+      "id": "skillbit-practice",
+      "provider": "SkillBit",
+      "title": "Role- and tool-based practice loops",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "intel",
+        "vulnerability"
+      ],
+      "skills": [
+        "network",
+        "security",
+        "detection",
+        "response",
+        "offense",
+        "appsec"
+      ],
+      "source": "skillbit-labs",
+      "access": "provider",
+      "scope": "Public platform capability; specific labs require catalog review",
+      "detail": "Use short scenarios to practice a selected gap and retain the investigation or reporting artifact. The exact lab-to-competency match must be confirmed in the licensed catalog."
+    },
+    {
+      "id": "thm-foundation",
+      "provider": "TryHackMe",
+      "title": "Cyber Security 101",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "intel",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "network",
+        "security"
+      ],
+      "source": "thm",
+      "access": "provider",
+      "scope": "Published path; role relevance proposed",
+      "detail": "A foundations option before specializing in defensive, offensive, or AI security work."
+    },
+    {
+      "id": "thm-soc",
+      "provider": "TryHackMe",
+      "title": "SOC Level 1 / SOC Level 2",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "intel"
+      ],
+      "source": "thm",
+      "access": "provider",
+      "scope": "Published paths; credential preparation requires issuer review",
+      "detail": "Build core analyst workflows, then inspect the SAL1/SAL2 scope as optional validation routes."
+    },
+    {
+      "id": "thm-ai",
+      "provider": "TryHackMe",
+      "title": "AI Security pathway",
+      "domains": [
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "privacy",
+        "architecture",
+        "mlsec"
+      ],
+      "skills": [
+        "ai",
+        "aisec",
+        "appsec"
+      ],
+      "source": "thm-ai",
+      "access": "provider",
+      "aiOnly": true,
+      "scope": "Published AI pathway; optional AI1 exam is separate",
+      "detail": "Practice AI application attack and defense; add an independent portfolio task for your target domain."
+    },
+    {
+      "id": "htb-foundation",
+      "provider": "Hack The Box",
+      "title": "Information Security Foundations",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "intel",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "network",
+        "security"
+      ],
+      "source": "htb",
+      "access": "provider",
+      "scope": "Published skill path; relevance proposed",
+      "detail": "Review foundational system and security gaps before entering a job-role path."
+    },
+    {
+      "id": "htb-soc",
+      "provider": "Hack The Box",
+      "title": "SOC Analyst / AI-Augmented SOC Analyst",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "judgment"
+      ],
+      "source": "htb-aug",
+      "access": "provider",
+      "scope": "Published path families; augmented modules released progressively",
+      "detail": "Use analyst tradecraft and evidence checks to evaluate agent-generated conclusions. Core catalog options are linked separately in Research."
+    },
+    {
+      "id": "htb-red",
+      "provider": "Hack The Box",
+      "title": "AI Red Teamer",
+      "domains": [
+        "offensive",
+        "appsec",
+        "mlsec"
+      ],
+      "skills": [
+        "offense",
+        "ai",
+        "aisec"
+      ],
+      "source": "htb",
+      "access": "provider",
+      "aiOnly": true,
+      "scope": "Published job-role path; COAE is a separate credential",
+      "detail": "Use AI attack-surface practice as one part of the target role; supplement with your domain-specific capstone."
+    },
+    {
+      "id": "sans-platform",
+      "provider": "SANS / GIAC",
+      "title": "SEC545 → optional GAIPS",
+      "domains": [
+        "appsec",
+        "cloud",
+        "iam",
+        "privacy",
+        "architecture",
+        "mlsec"
+      ],
+      "skills": [
+        "appsec",
+        "cloud",
+        "aisec"
+      ],
+      "source": "sans-ai",
+      "access": "sponsored",
+      "aiOnly": true,
+      "scope": "Published course/credential relationship; role relevance proposed",
+      "detail": "Consider for specialized GenAI and LLM application security. Check prerequisites, current syllabus, and separate certification terms."
+    },
+    {
+      "id": "sans-automation",
+      "provider": "SANS / GIAC",
+      "title": "SEC598 → optional GASAE",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "intel",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "python",
+        "ai",
+        "judgment"
+      ],
+      "source": "sans-ai",
+      "access": "sponsored",
+      "aiOnly": true,
+      "scope": "Published course/credential relationship; role relevance proposed",
+      "detail": "Consider for applying AI and automation to security operations. Require evidence of error handling and human oversight."
+    },
+    {
+      "id": "sans-ml",
+      "provider": "SANS / GIAC",
+      "title": "SEC595 → optional GMLE",
+      "domains": [
+        "mlsec"
+      ],
+      "skills": [
+        "python",
+        "ai"
+      ],
+      "source": "sans-ai",
+      "access": "sponsored",
+      "aiOnly": true,
+      "scope": "Published course/credential relationship",
+      "detail": "Consider for security practitioners building deeper applied data science and ML skills."
+    },
+    {
+      "id": "portswigger-ai",
+      "provider": "PortSwigger",
+      "title": "Web LLM attacks",
+      "domains": [
+        "offensive",
+        "appsec",
+        "iam",
+        "mlsec"
+      ],
+      "skills": [
+        "appsec",
+        "aisec"
+      ],
+      "source": "portswigger",
+      "access": "free",
+      "aiOnly": true,
+      "scope": "Free published learning path and labs",
+      "detail": "A concrete free lab route for connected LLM applications, prompt injection, and API trust boundaries."
+    },
+    {
+      "id": "public-risk",
+      "provider": "NIST / public references",
+      "title": "AI risk and control study",
+      "domains": [
+        "grc",
+        "privacy",
+        "architecture",
+        "ot"
+      ],
+      "skills": [
+        "risk",
+        "privacy",
+        "ai",
+        "judgment"
+      ],
+      "source": "airmf",
+      "access": "free",
+      "aiOnly": true,
+      "scope": "Original IgniteCyber study route using public guidance",
+      "detail": "Use published guidance to create a risk register, assign accountable owners, and explain control evidence. This is not a NIST course or certification."
+    },
+    {
+      "id": "offsec-core",
+      "provider": "OffSec",
+      "title": "Domain foundations & staged upskilling",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "intel",
+        "vulnerability"
+      ],
+      "skills": [
+        "network",
+        "security",
+        "offense",
+        "response",
+        "appsec",
+        "cloud"
+      ],
+      "source": "offsec-path",
+      "access": "provider",
+      "scope": "Published path catalog; select the relevant current syllabus",
+      "detail": "Compare domain foundations with the gap list. Placement-led enterprise programs may provide additional assessment gates."
+    }
+  ]
+}
