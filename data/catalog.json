@@ -845,7 +845,7 @@
     {
       "id": "inl-ics401",
       "title": "INL / CISA · ICS Cybersecurity Evaluation (401)",
-      "url": "https://inl.gov/national-security/ics-cybersecurity-training/#ics401",
+      "url": "https://inl.gov/content/uploads/2026/05/ICS_Training_Course_Catalog.pdf#page=2",
       "type": "Training",
       "finding": "Use the ICS asset, connectivity, and dependency analysis to inform the tabletop and its documented safeguards.",
       "limitation": "No tuition · registration required",
@@ -855,7 +855,7 @@
     {
       "id": "inl-ics311",
       "title": "INL / CISA · ICS Detect the Attacker (311)",
-      "url": "https://inl.gov/national-security/ics-cybersecurity-training/#ics311",
+      "url": "https://inl.gov/content/uploads/2024/05/ICS-Detect-the-Attacker-Training.pdf",
       "type": "Training",
       "finding": "Focus on defensive detection and evidence correlation in OT. Complete the sprint’s containment and recovery tabletop separately.",
       "limitation": "No tuition · in-person registration and acceptance required",
