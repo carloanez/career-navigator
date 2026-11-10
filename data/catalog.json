@@ -3406,6 +3406,209 @@
   ],
   "learningOptions": [
     {
+      "id": "tcm-security",
+      "provider": "TCM Security",
+      "title": "Practical Security Fundamentals",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "security"
+      ],
+      "source": "tcm-fundamentals",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Use the defensive fundamentals as a starting point. Pair them with your domain’s specialist training.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-linux",
+      "provider": "TCM Security",
+      "title": "Linux 100: Fundamentals",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "intel",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "network"
+      ],
+      "source": "tcm-linux100",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Build comfort with basic Linux administration and system concepts before working with logs or workloads.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-helpdesk",
+      "provider": "TCM Security",
+      "title": "Practical Help Desk",
+      "domains": [
+        "soc",
+        "dfir",
+        "cloud",
+        "iam",
+        "ot"
+      ],
+      "skills": [
+        "network",
+        "identity"
+      ],
+      "source": "tcm-helpdesk-course",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Use the support and ticketing exercises to practice troubleshooting and escalation. For OT, use only as general IT preparation.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-programming",
+      "provider": "TCM Security",
+      "title": "Programming 100: Fundamentals",
+      "domains": [
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "intel",
+        "architecture",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "python"
+      ],
+      "source": "tcm-programming100",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Learn basic Python and write a small data-validation or log-parsing exercise.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-ai",
+      "provider": "TCM Security",
+      "title": "AI 100: Fundamentals",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "ai"
+      ],
+      "source": "tcm-ai100",
+      "access": "free",
+      "scope": "AI foundation",
+      "detail": "Use the introduction before studying AI risks and controls specific to your target role.",
+      "aiOnly": true
+    },
+    {
+      "id": "tcm-soc",
+      "provider": "TCM Security",
+      "title": "Security Operations (SOC) 101",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "intel"
+      ],
+      "source": "tcm-soc101",
+      "access": "provider",
+      "scope": "Membership · optional PSAA",
+      "detail": "Practice triage and document the telemetry, evidence and escalation decision.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-soc-201",
+      "provider": "TCM Security",
+      "title": "Security Operations (SOC) 201",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "response",
+        "detection",
+        "intel"
+      ],
+      "source": "tcm-soc201",
+      "access": "provider",
+      "scope": "Membership · intermediate",
+      "detail": "Practice incident investigation and threat hunting. Retain a defensible timeline or investigation report.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-detection-engineering",
+      "provider": "TCM Security",
+      "title": "Detection Engineering for Beginners",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection"
+      ],
+      "source": "tcm-detection",
+      "access": "provider",
+      "scope": "Membership · defensive specialization",
+      "detail": "Practice documenting detection objectives and the evidence that validates them.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-windows-forensics",
+      "provider": "TCM Security",
+      "title": "Introduction to Windows Forensics",
+      "domains": [
+        "dfir",
+        "soc"
+      ],
+      "skills": [
+        "response",
+        "detection"
+      ],
+      "source": "tcm-windows-dfir",
+      "access": "provider",
+      "scope": "Membership · DFIR specialization",
+      "detail": "Practice organizing Windows investigation evidence and documenting a defensible timeline.",
+      "aiOnly": false
+    },
+    {
       "id": "skillbit-practice",
       "provider": "SkillBit",
       "title": "Role- and tool-based practice loops",
@@ -3692,173 +3895,6 @@
       "access": "provider",
       "scope": "Published path catalog; select the relevant current syllabus",
       "detail": "Compare domain foundations with the gap list. Placement-led enterprise programs may provide additional assessment gates."
-    },
-    {
-      "id": "tcm-security",
-      "provider": "TCM Security",
-      "title": "Practical Security Fundamentals",
-      "domains": [
-        "soc",
-        "dfir",
-        "offensive",
-        "appsec",
-        "cloud",
-        "iam",
-        "grc",
-        "intel",
-        "privacy",
-        "architecture",
-        "ot",
-        "vulnerability",
-        "mlsec"
-      ],
-      "skills": [
-        "security"
-      ],
-      "source": "tcm-fundamentals",
-      "access": "free",
-      "scope": "Foundation",
-      "detail": "Use the defensive fundamentals as a starting point. Pair them with your domain’s specialist training.",
-      "aiOnly": false
-    },
-    {
-      "id": "tcm-linux",
-      "provider": "TCM Security",
-      "title": "Linux 100: Fundamentals",
-      "domains": [
-        "soc",
-        "dfir",
-        "offensive",
-        "appsec",
-        "cloud",
-        "iam",
-        "intel",
-        "architecture",
-        "ot",
-        "vulnerability",
-        "mlsec"
-      ],
-      "skills": [
-        "network"
-      ],
-      "source": "tcm-linux100",
-      "access": "free",
-      "scope": "Foundation",
-      "detail": "Build comfort with basic Linux administration and system concepts before working with logs or workloads.",
-      "aiOnly": false
-    },
-    {
-      "id": "tcm-helpdesk",
-      "provider": "TCM Security",
-      "title": "Practical Help Desk",
-      "domains": [
-        "soc",
-        "dfir",
-        "cloud",
-        "iam",
-        "ot"
-      ],
-      "skills": [
-        "network",
-        "identity"
-      ],
-      "source": "tcm-helpdesk-course",
-      "access": "free",
-      "scope": "Foundation",
-      "detail": "Use the support and ticketing exercises to practice troubleshooting and escalation. For OT, use only as general IT preparation.",
-      "aiOnly": false
-    },
-    {
-      "id": "tcm-programming",
-      "provider": "TCM Security",
-      "title": "Programming 100: Fundamentals",
-      "domains": [
-        "dfir",
-        "offensive",
-        "appsec",
-        "cloud",
-        "iam",
-        "intel",
-        "architecture",
-        "vulnerability",
-        "mlsec"
-      ],
-      "skills": [
-        "python"
-      ],
-      "source": "tcm-programming100",
-      "access": "free",
-      "scope": "Foundation",
-      "detail": "Learn basic Python and write a small data-validation or log-parsing exercise.",
-      "aiOnly": false
-    },
-    {
-      "id": "tcm-ai",
-      "provider": "TCM Security",
-      "title": "AI 100: Fundamentals",
-      "domains": [
-        "soc",
-        "dfir",
-        "offensive",
-        "appsec",
-        "cloud",
-        "iam",
-        "grc",
-        "intel",
-        "privacy",
-        "architecture",
-        "ot",
-        "vulnerability",
-        "mlsec"
-      ],
-      "skills": [
-        "ai"
-      ],
-      "source": "tcm-ai100",
-      "access": "free",
-      "scope": "AI foundation",
-      "detail": "Use the introduction before studying AI risks and controls specific to your target role.",
-      "aiOnly": true
-    },
-    {
-      "id": "tcm-soc",
-      "provider": "TCM Security",
-      "title": "Security Operations (SOC) 101",
-      "domains": [
-        "soc",
-        "dfir",
-        "intel"
-      ],
-      "skills": [
-        "detection",
-        "response",
-        "intel"
-      ],
-      "source": "tcm-soc101",
-      "access": "provider",
-      "scope": "Membership · optional PSAA",
-      "detail": "Practice triage and document the telemetry, evidence and escalation decision.",
-      "aiOnly": false
-    },
-    {
-      "id": "tcm-soc-201",
-      "provider": "TCM Security",
-      "title": "Security Operations (SOC) 201",
-      "domains": [
-        "soc",
-        "dfir",
-        "intel"
-      ],
-      "skills": [
-        "response",
-        "detection",
-        "intel"
-      ],
-      "source": "tcm-soc201",
-      "access": "provider",
-      "scope": "Membership · intermediate",
-      "detail": "Practice incident investigation and threat hunting. Retain a defensible timeline or investigation report.",
-      "aiOnly": false
     },
     {
       "id": "hack-smarter-paths",
@@ -4173,42 +4209,6 @@
       "access": "free",
       "scope": "Public guidance · guided self-study",
       "detail": "Select controls for a fictional system, identify the evidence needed to assess them, and review SP 800-171 separately if the scenario involves CUI.",
-      "aiOnly": false
-    },
-    {
-      "id": "tcm-detection-engineering",
-      "provider": "TCM Security",
-      "title": "Detection Engineering for Beginners",
-      "domains": [
-        "soc",
-        "dfir",
-        "intel"
-      ],
-      "skills": [
-        "detection"
-      ],
-      "source": "tcm-detection",
-      "access": "provider",
-      "scope": "Membership · defensive specialization",
-      "detail": "Practice documenting detection objectives and the evidence that validates them.",
-      "aiOnly": false
-    },
-    {
-      "id": "tcm-windows-forensics",
-      "provider": "TCM Security",
-      "title": "Introduction to Windows Forensics",
-      "domains": [
-        "dfir",
-        "soc"
-      ],
-      "skills": [
-        "response",
-        "detection"
-      ],
-      "source": "tcm-windows-dfir",
-      "access": "provider",
-      "scope": "Membership · DFIR specialization",
-      "detail": "Practice organizing Windows investigation evidence and documenting a defensible timeline.",
       "aiOnly": false
     }
   ]

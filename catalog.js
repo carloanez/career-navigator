@@ -247,7 +247,7 @@ const learningOptions=[
   skills:skillIds.split(' '),source,access,scope,detail,aiOnly
  }))
 
-];
+].sort((a,b)=>Number(b.provider==='TCM Security')-Number(a.provider==='TCM Security'));
 const catalog={version:'0.2.0',reviewed:'2026-11-10',sources,frameworks,skills,certs,domains,roles,activities,questions,learningOptions};
 root.CareerCatalog=catalog;if(typeof module!=='undefined')module.exports=catalog;
 })(typeof window!=='undefined'?window:globalThis);
