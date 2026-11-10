@@ -763,6 +763,16 @@
       "access": "Public web page"
     },
     {
+      "id": "tcm-secure-ai",
+      "title": "TCM Security · Securing AI Applications",
+      "url": "https://tcm-sec.com/academy/securing-ai-applications/",
+      "type": "Training",
+      "finding": "Covers defensive controls for AI applications, including input and output controls, access restrictions, and safeguards for agent actions.",
+      "limitation": "Membership. Review the published prerequisites. Scope is AI application safeguards.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
       "id": "tcm-windows-dfir",
       "title": "TCM Security · Introduction to Windows Forensics",
       "url": "https://tcm-sec.com/academy/introduction-to-windows-forensics/",
@@ -3444,7 +3454,9 @@
         "appsec",
         "cloud",
         "iam",
+        "grc",
         "intel",
+        "privacy",
         "architecture",
         "ot",
         "vulnerability",
@@ -3468,7 +3480,10 @@
         "dfir",
         "cloud",
         "iam",
-        "ot"
+        "ot",
+        "appsec",
+        "privacy",
+        "architecture"
       ],
       "skills": [
         "network",
@@ -3477,7 +3492,7 @@
       "source": "tcm-helpdesk-course",
       "access": "free",
       "scope": "Foundation",
-      "detail": "Use the support and ticketing exercises to practice troubleshooting and escalation. For OT, use only as general IT preparation.",
+      "detail": "Use the Windows permissions and Active Directory material as a foundation for access-control practice. For OT, use this course for general IT preparation.",
       "aiOnly": false
     },
     {
@@ -3589,6 +3604,34 @@
       "scope": "Membership · defensive specialization",
       "detail": "Practice documenting detection objectives and the evidence that validates them.",
       "aiOnly": false
+    },
+    {
+      "id": "tcm-ai-defenses",
+      "provider": "TCM Security",
+      "title": "Securing AI Applications",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "aisec"
+      ],
+      "source": "tcm-secure-ai",
+      "access": "provider",
+      "scope": "Membership · AI application defense",
+      "detail": "Practice evaluating input and output controls, access restrictions, and safeguards for agent actions. Review the published prerequisites.",
+      "aiOnly": true
     },
     {
       "id": "tcm-windows-forensics",
