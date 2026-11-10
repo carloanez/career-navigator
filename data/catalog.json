@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "reviewed": "2026-10-21",
+  "version": "0.2.0",
+  "reviewed": "2026-11-10",
   "sources": [
     {
       "id": "skillbit",
@@ -314,12 +314,12 @@
     },
     {
       "id": "attack",
-      "title": "MITRE ATT&CK",
-      "url": "https://attack.mitre.org/",
+      "title": "MITRE ATT&CK version history",
+      "url": "https://attack.mitre.org/resources/versions/",
       "type": "Framework",
-      "finding": "An adversary-behavior knowledge base supports threat-led learning and detection exercises.",
-      "limitation": "Selected technique examples only; no claim of complete coverage.",
-      "reviewed": "2026-10-21",
+      "finding": "MITRE lists v20.1 as current since October 13, 2026.",
+      "limitation": "Topic-level mapping. No full matrix or dataset is bundled.",
+      "reviewed": "2026-11-10",
       "access": "Public web page"
     },
     {
@@ -344,12 +344,12 @@
     },
     {
       "id": "owasp",
-      "title": "OWASP LLM Top 10 (2025)",
-      "url": "https://genai.owasp.org/llm-top-10/",
+      "title": "OWASP GenAI LLM Top 10 (2026)",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
       "type": "Framework",
-      "finding": "LLM application risk taxonomy covers prompt injection, information disclosure, supply-chain risks, poisoning, and excessive agency.",
-      "limitation": "This prototype uses the 2025 edition, with topic IDs.",
-      "reviewed": "2026-10-21",
+      "finding": "Updates the LLM risk rankings and cross-framework references.",
+      "limitation": "The Navigator maps topics rather than pinning risk identifiers.",
+      "reviewed": "2026-11-10",
       "access": "Public web page"
     },
     {
@@ -464,12 +464,12 @@
     },
     {
       "id": "sc300",
-      "title": "Microsoft SC-300",
-      "url": "https://learn.microsoft.com/en-us/learn/certifications/exams/sc-300/",
+      "title": "Microsoft Learn SC-300 study guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
       "type": "Credential",
-      "finding": "Identity and access administrator certification supports an IAM specialization.",
-      "limitation": "Vendor-specific credential; agent identity mapping is an IgniteCyber extension.",
-      "reviewed": "2026-10-21",
+      "finding": "Public guidance for identity, authentication, workload identities and governance.",
+      "limitation": "Microsoft-specific. The exam is separate from public study resources.",
+      "reviewed": "2026-11-10",
       "access": "Public web page"
     },
     {
@@ -480,6 +480,296 @@
       "finding": "Industrial cybersecurity certification provides an OT-focused credential option.",
       "limitation": "AI/OT specialization still needs additional practical validation.",
       "reviewed": "2026-10-21",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-free",
+      "title": "TCM Security Academy free tier",
+      "url": "https://tcm-sec.com/academy/tcm-academy-free-tier/",
+      "type": "Training",
+      "finding": "Lists free courses in security fundamentals, help desk, Linux, programming, and AI.",
+      "limitation": "Free registration may be required. Membership courses and exams have separate terms.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-soc101",
+      "title": "TCM Security Operations (SOC) 101",
+      "url": "https://tcm-sec.com/academy/security-operations-soc-101",
+      "type": "Training",
+      "finding": "Beginner SOC training includes telemetry analysis, triage, and incident response.",
+      "limitation": "Included in membership. PSAA is an optional separate assessment.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-soc201",
+      "title": "TCM Security Operations (SOC) 201",
+      "url": "https://tcm-sec.com/academy/security-operations-soc-201/",
+      "type": "Training",
+      "finding": "Intermediate instruction focuses on incident response and threat hunting.",
+      "limitation": "Membership access. Start with analyst foundations.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-psaa",
+      "title": "TCM Practical SOC Analyst Associate",
+      "url": "https://certifications.tcm-sec.com/psaa/",
+      "type": "Credential",
+      "finding": "TCM offers a practical SOC analyst certification.",
+      "limitation": "Check exam access and conditions with TCM.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "hack-smarter",
+      "title": "Hack Smarter learning paths",
+      "url": "https://paths.hacksmarter.org/",
+      "type": "Platform",
+      "finding": "Curates learning journeys for hands-on labs and courses.",
+      "limitation": "The path index is public. Lab access and course terms can differ.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "letsdefend-path",
+      "title": "LetsDefend SOC Analyst learning path",
+      "url": "https://app.letsdefend.io/path/soc-analyst-learning-path",
+      "type": "Training",
+      "finding": "Simulated SOC training covers alert analysis, escalation and incident response.",
+      "limitation": "The published path is distinct from any individual free course.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "cyberdefenders",
+      "title": "CyberDefenders blue-team labs",
+      "url": "https://cyberdefenders.org/blue-team-labs/",
+      "type": "Training",
+      "finding": "Offers incident investigation and forensics cases using security artifacts.",
+      "limitation": "Review each lab’s access level and prerequisites.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "btlo",
+      "title": "Blue Team Labs Online",
+      "url": "https://blueteamlabs.online/",
+      "type": "Training",
+      "finding": "Offers defensive investigation challenges and labs.",
+      "limitation": "Access varies by challenge and plan.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "cisco-training",
+      "title": "Cisco Networking Academy and CCST Cybersecurity",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-cybersecurity.html",
+      "type": "Training",
+      "finding": "Cisco links entry-level security training to its CCST Cybersecurity credential.",
+      "limitation": "Provider exam and training terms are separate.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "microsoft-soc",
+      "title": "Microsoft Learn SC-200 study guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+      "type": "Training",
+      "finding": "Lists security operations skills for Microsoft Sentinel and Defender XDR.",
+      "limitation": "Public study guidance. Exams and Azure usage may cost extra.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "microsoft-data",
+      "title": "Microsoft Learn SC-401 study guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "type": "Training",
+      "finding": "Covers data protection and information security in Microsoft 365.",
+      "limitation": "Microsoft-specific guidance. Exam, tenant and lab access are separate.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "aws-security",
+      "title": "AWS Security training",
+      "url": "https://aws.amazon.com/training/learn-about/security/",
+      "type": "Training",
+      "finding": "Lists digital and instructor-led learning for securing AWS workloads.",
+      "limitation": "Course, lab, and AWS account costs vary.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "fortinet-training",
+      "title": "Fortinet Training Institute",
+      "url": "https://www.fortinet.com/training/cybersecurity-professionals",
+      "type": "Training",
+      "finding": "Publishes networking and cybersecurity learning options.",
+      "limitation": "Instructor-led training, labs and exams may have separate costs.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "google-training",
+      "title": "Google Cybersecurity Certificate",
+      "url": "https://www.skills.google/paths/2268?locale=en",
+      "type": "Training",
+      "finding": "Offers a structured introductory cybersecurity learning path.",
+      "limitation": "Completion certificate and professional certification are different. Review access terms.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "inl-ics",
+      "title": "Idaho National Laboratory ICS Cybersecurity Training",
+      "url": "https://inl.gov/national-security/ics-cybersecurity-training/",
+      "type": "Training",
+      "finding": "Lists industrial control systems cybersecurity training for critical infrastructure.",
+      "limitation": "Check delivery, registration, and eligibility for the individual offering.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "asvs",
+      "title": "OWASP Application Security Verification Standard",
+      "url": "https://asvs.owasp.org/",
+      "type": "Framework",
+      "finding": "ASVS 5.0.0 defines application security verification requirements.",
+      "limitation": "Use for verification planning and evidence, with an explicitly selected scope.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "agentic",
+      "title": "OWASP Top 10 for Agentic Applications",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "type": "Framework",
+      "finding": "The 2026 list covers risks of agentic applications, including tool use and excessive authority.",
+      "limitation": "Risk taxonomy rather than a certification or complete control standard.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "genai-profile",
+      "title": "NIST Generative AI Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "type": "Framework",
+      "finding": "NIST AI 600-1 applies the AI RMF to generative AI.",
+      "limitation": "Voluntary guidance. Choose actions appropriate to the use case.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "cyber-ai-profile",
+      "title": "NIST Cyber AI Profile draft",
+      "url": "https://csrc.nist.gov/pubs/ir/8596/iprd",
+      "type": "Draft framework",
+      "finding": "Initial preliminary draft applies CSF outcomes to AI-related cybersecurity.",
+      "limitation": "Track as a draft reference. It is not used as a final control baseline here.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "ot-guide",
+      "title": "NIST Guide to Operational Technology Security",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "type": "Framework",
+      "finding": "SP 800-82 Rev. 3 addresses OT security alongside reliability and safety requirements.",
+      "limitation": "Learning reference. Production decisions require site-specific authority.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "nist-800-53",
+      "title": "NIST SP 800-53 security and privacy controls",
+      "url": "https://csrc.nist.gov/News/2025/nist-releases-revision-to-sp-800-53-controls",
+      "type": "Framework",
+      "finding": "The NIST revision notice documents the 5.2.0 control catalog update.",
+      "limitation": "Select and tailor controls with the responsible organization.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "nist-800-171",
+      "title": "NIST SP 800-171 Rev. 3",
+      "url": "https://csrc.nist.gov/pubs/sp/800/171/r3/final",
+      "type": "Framework",
+      "finding": "Requirements address protection of controlled unclassified information in nonfederal systems.",
+      "limitation": "Applicable obligations depend on the contract and governing requirements.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-fundamentals",
+      "title": "TCM Security · Practical Security Fundamentals",
+      "url": "https://tcm-sec.com/academy/practical-security-fundamentals/",
+      "type": "Training",
+      "finding": "Introduces defensive security fundamentals.",
+      "limitation": "Free tier. Use as foundational study.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-linux100",
+      "title": "TCM Security · Linux 100: Fundamentals",
+      "url": "https://tcm-sec.com/academy/linux-100-fundamentals/",
+      "type": "Training",
+      "finding": "Introduces Linux fundamentals.",
+      "limitation": "Free tier.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-helpdesk-course",
+      "title": "TCM Security · Practical Help Desk",
+      "url": "https://tcm-sec.com/academy/practical-help-desk/",
+      "type": "Training",
+      "finding": "Covers IT support, ticketing and troubleshooting.",
+      "limitation": "Free tier.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-programming100",
+      "title": "TCM Security · Programming 100: Fundamentals",
+      "url": "https://tcm-sec.com/academy/programming-100-fundamentals/",
+      "type": "Training",
+      "finding": "Introduces programming with Python.",
+      "limitation": "Free tier.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-ai100",
+      "title": "TCM Security · AI 100: Fundamentals",
+      "url": "https://tcm-sec.com/academy/ai-100-fundamentals/",
+      "type": "Training",
+      "finding": "Introduces AI concepts and language models.",
+      "limitation": "Free tier. Pair with role-specific AI security training.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-detection",
+      "title": "TCM Security · Detection Engineering for Beginners",
+      "url": "https://tcm-sec.com/academy/detection-engineering-for-beginners/",
+      "type": "Training",
+      "finding": "Introduces detection engineering workflows.",
+      "limitation": "Check membership terms.",
+      "reviewed": "2026-11-10",
+      "access": "Public web page"
+    },
+    {
+      "id": "tcm-windows-dfir",
+      "title": "TCM Security · Introduction to Windows Forensics",
+      "url": "https://tcm-sec.com/academy/introduction-to-windows-forensics/",
+      "type": "Training",
+      "finding": "Introduces investigative skills and Windows forensic evidence.",
+      "limitation": "Check membership terms.",
+      "reviewed": "2026-11-10",
       "access": "Public web page"
     }
   ],
@@ -530,7 +820,7 @@
     {
       "id": "attack",
       "name": "MITRE ATT&CK",
-      "version": "Living knowledge base",
+      "version": "v20.1",
       "purpose": "How adversaries operate",
       "description": "Practice detecting and explaining adversary behaviors.",
       "topics": [
@@ -571,13 +861,13 @@
     {
       "id": "owasp",
       "name": "OWASP LLM Top 10",
-      "version": "2025",
+      "version": "2026",
       "purpose": "Where AI apps fail",
-      "description": "Turn application risks into scoped lab objectives.",
+      "description": "Use application risk topics to plan security review.",
       "topics": [
-        "LLM01 Prompt Injection",
-        "LLM02 Sensitive Information Disclosure",
-        "LLM06 Excessive Agency"
+        "Prompt injection",
+        "Sensitive information disclosure",
+        "Excessive agency"
       ],
       "source": "owasp"
     },
@@ -647,6 +937,84 @@
         "Govern AI"
       ],
       "source": "sans-blueprint"
+    },
+    {
+      "id": "asvs",
+      "name": "OWASP ASVS",
+      "version": "5.0.0",
+      "purpose": "How application controls are verified",
+      "description": "Use verifiable requirements when planning application and API control checks.",
+      "topics": [
+        "Authentication",
+        "Authorization",
+        "Data protection"
+      ],
+      "source": "asvs"
+    },
+    {
+      "id": "agentic",
+      "name": "OWASP Agentic Applications Top 10",
+      "version": "2026",
+      "purpose": "Where agentic applications need safeguards",
+      "description": "Use the risk taxonomy to review permissions, tool boundaries, and oversight.",
+      "topics": [
+        "Tool use",
+        "Agent identity",
+        "Human oversight"
+      ],
+      "source": "agentic"
+    },
+    {
+      "id": "genai-profile",
+      "name": "NIST GenAI Profile",
+      "version": "AI 600-1",
+      "purpose": "How AI RMF applies to generative AI",
+      "description": "Use the profile to identify and document risks in specific generative AI deployments.",
+      "topics": [
+        "Evaluation",
+        "Information integrity",
+        "Data privacy"
+      ],
+      "source": "genai-profile"
+    },
+    {
+      "id": "ot-guide",
+      "name": "NIST OT Security Guide",
+      "version": "SP 800-82 Rev. 3",
+      "purpose": "How OT controls fit site constraints",
+      "description": "Plan defensive safeguards around safety, availability, and authorized change control.",
+      "topics": [
+        "Safety",
+        "Segmentation",
+        "Monitoring"
+      ],
+      "source": "ot-guide"
+    },
+    {
+      "id": "nist-800-53",
+      "name": "NIST SP 800-53",
+      "version": "Rev. 5 · release 5.2.0",
+      "purpose": "How controls are specified",
+      "description": "Use a public control catalog to plan evidence and assurance.",
+      "topics": [
+        "Access control",
+        "Audit",
+        "Assessment"
+      ],
+      "source": "nist-800-53"
+    },
+    {
+      "id": "nist-800-171",
+      "name": "NIST SP 800-171",
+      "version": "Rev. 3",
+      "purpose": "How CUI is protected in nonfederal systems",
+      "description": "Use scoped CUI protection requirements in contractor learning scenarios.",
+      "topics": [
+        "System boundaries",
+        "Access control",
+        "Documentation"
+      ],
+      "source": "nist-800-171"
     }
   ],
   "skills": [
@@ -717,7 +1085,8 @@
       "group": "Engineering",
       "frameworks": [
         "owasp",
-        "saif"
+        "saif",
+        "asvs"
       ]
     },
     {
@@ -737,7 +1106,9 @@
       "group": "Engineering",
       "frameworks": [
         "cis",
-        "owasp"
+        "owasp",
+        "asvs",
+        "agentic"
       ]
     },
     {
@@ -748,7 +1119,10 @@
       "frameworks": [
         "csf",
         "airmf",
-        "iso"
+        "iso",
+        "genai-profile",
+        "nist-800-53",
+        "nist-800-171"
       ]
     },
     {
@@ -768,7 +1142,8 @@
       "group": "Governance",
       "frameworks": [
         "owasp",
-        "airmf"
+        "airmf",
+        "genai-profile"
       ]
     },
     {
@@ -778,7 +1153,8 @@
       "group": "Engineering",
       "frameworks": [
         "attack",
-        "csf"
+        "csf",
+        "ot-guide"
       ]
     },
     {
@@ -798,7 +1174,8 @@
       "group": "AI core",
       "frameworks": [
         "atlas",
-        "owasp"
+        "owasp",
+        "agentic"
       ]
     },
     {
@@ -808,7 +1185,9 @@
       "group": "AI core",
       "frameworks": [
         "airmf",
-        "sans-blueprint"
+        "sans-blueprint",
+        "agentic",
+        "genai-profile"
       ]
     }
   ],
@@ -833,6 +1212,18 @@
       "skills": [
         "network",
         "security"
+      ]
+    },
+    {
+      "id": "PSAA",
+      "provider": "TCM Security",
+      "level": "Practitioner",
+      "source": "tcm-psaa",
+      "eligibility": "Optional practical SOC credential. Check current exam terms with TCM.",
+      "skills": [
+        "detection",
+        "response",
+        "intel"
       ]
     },
     {
@@ -1089,6 +1480,7 @@
         "response"
       ],
       "certs": [
+        "PSAA",
         "SAL1",
         "BTL1",
         "SAL2",
@@ -1661,6 +2053,7 @@
         "intel": 2
       },
       "certs": [
+        "PSAA",
         "SAL1",
         "BTL1",
         "SAL2"
@@ -1688,6 +2081,7 @@
         "judgment": 3
       },
       "certs": [
+        "PSAA",
         "SAL1",
         "BTL1",
         "SAL2",
@@ -3298,6 +3692,524 @@
       "access": "provider",
       "scope": "Published path catalog; select the relevant current syllabus",
       "detail": "Compare domain foundations with the gap list. Placement-led enterprise programs may provide additional assessment gates."
+    },
+    {
+      "id": "tcm-security",
+      "provider": "TCM Security",
+      "title": "Practical Security Fundamentals",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "security"
+      ],
+      "source": "tcm-fundamentals",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Use the defensive fundamentals as a starting point. Pair them with your domain’s specialist training.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-linux",
+      "provider": "TCM Security",
+      "title": "Linux 100: Fundamentals",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "intel",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "network"
+      ],
+      "source": "tcm-linux100",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Build comfort with basic Linux administration and system concepts before working with logs or workloads.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-helpdesk",
+      "provider": "TCM Security",
+      "title": "Practical Help Desk",
+      "domains": [
+        "soc",
+        "dfir",
+        "cloud",
+        "iam",
+        "ot"
+      ],
+      "skills": [
+        "network",
+        "identity"
+      ],
+      "source": "tcm-helpdesk-course",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Use the support and ticketing exercises to practice troubleshooting and escalation. For OT, use only as general IT preparation.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-programming",
+      "provider": "TCM Security",
+      "title": "Programming 100: Fundamentals",
+      "domains": [
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "intel",
+        "architecture",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "python"
+      ],
+      "source": "tcm-programming100",
+      "access": "free",
+      "scope": "Foundation",
+      "detail": "Learn basic Python and write a small data-validation or log-parsing exercise.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-ai",
+      "provider": "TCM Security",
+      "title": "AI 100: Fundamentals",
+      "domains": [
+        "soc",
+        "dfir",
+        "offensive",
+        "appsec",
+        "cloud",
+        "iam",
+        "grc",
+        "intel",
+        "privacy",
+        "architecture",
+        "ot",
+        "vulnerability",
+        "mlsec"
+      ],
+      "skills": [
+        "ai"
+      ],
+      "source": "tcm-ai100",
+      "access": "free",
+      "scope": "AI foundation",
+      "detail": "Use the introduction before studying AI risks and controls specific to your target role.",
+      "aiOnly": true
+    },
+    {
+      "id": "tcm-soc",
+      "provider": "TCM Security",
+      "title": "Security Operations (SOC) 101",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "intel"
+      ],
+      "source": "tcm-soc101",
+      "access": "provider",
+      "scope": "Membership · optional PSAA",
+      "detail": "Practice triage and document the telemetry, evidence and escalation decision.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-soc-201",
+      "provider": "TCM Security",
+      "title": "Security Operations (SOC) 201",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "response",
+        "detection",
+        "intel"
+      ],
+      "source": "tcm-soc201",
+      "access": "provider",
+      "scope": "Membership · intermediate",
+      "detail": "Practice incident investigation and threat hunting. Retain a defensible timeline or investigation report.",
+      "aiOnly": false
+    },
+    {
+      "id": "hack-smarter-paths",
+      "provider": "Hack Smarter",
+      "title": "Curated lab learning paths",
+      "domains": [
+        "offensive",
+        "appsec",
+        "vulnerability"
+      ],
+      "skills": [
+        "offense",
+        "appsec",
+        "security"
+      ],
+      "source": "hack-smarter",
+      "access": "provider",
+      "scope": "Check individual lab access",
+      "detail": "Choose an authorized learning environment and practice scope definition, reporting and remediation review.",
+      "aiOnly": false
+    },
+    {
+      "id": "letsdefend-soc",
+      "provider": "LetsDefend",
+      "title": "SOC Analyst Learning Path",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "intel"
+      ],
+      "source": "letsdefend-path",
+      "access": "provider",
+      "scope": "Check path access",
+      "detail": "Practice triage and record why an alert should close or escalate.",
+      "aiOnly": false
+    },
+    {
+      "id": "cyberdefenders-labs",
+      "provider": "CyberDefenders",
+      "title": "Blue-team investigation labs",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel",
+        "cloud"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "intel",
+        "cloud"
+      ],
+      "source": "cyberdefenders",
+      "access": "provider",
+      "scope": "Check individual lab access",
+      "detail": "Build an evidence-backed incident timeline using provider-supplied artifacts.",
+      "aiOnly": false
+    },
+    {
+      "id": "btlo-labs",
+      "provider": "Blue Team Labs Online",
+      "title": "Defensive investigation challenges",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "intel"
+      ],
+      "source": "btlo",
+      "access": "provider",
+      "scope": "Check challenge access",
+      "detail": "Use short investigations to practice producing clear evidence notes.",
+      "aiOnly": false
+    },
+    {
+      "id": "cisco-ccst",
+      "provider": "Cisco Networking Academy",
+      "title": "Entry-level cybersecurity training",
+      "domains": [
+        "soc",
+        "cloud",
+        "iam",
+        "ot",
+        "vulnerability",
+        "architecture"
+      ],
+      "skills": [
+        "network",
+        "security"
+      ],
+      "source": "cisco-training",
+      "access": "provider",
+      "scope": "Check training and exam terms",
+      "detail": "Use networking and security foundations before moving to role-specific training.",
+      "aiOnly": false
+    },
+    {
+      "id": "microsoft-sc200",
+      "provider": "Microsoft Learn",
+      "title": "Security operations (SC-200)",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel",
+        "cloud"
+      ],
+      "skills": [
+        "detection",
+        "response",
+        "cloud"
+      ],
+      "source": "microsoft-soc",
+      "access": "free",
+      "scope": "Public study guide · exam separate",
+      "detail": "Practice translating alert and investigation questions into Microsoft Sentinel or Defender workflows.",
+      "aiOnly": false
+    },
+    {
+      "id": "microsoft-sc300",
+      "provider": "Microsoft Learn",
+      "title": "Identity and access (SC-300)",
+      "domains": [
+        "iam",
+        "cloud",
+        "architecture",
+        "privacy"
+      ],
+      "skills": [
+        "identity",
+        "cloud"
+      ],
+      "source": "sc300",
+      "access": "free",
+      "scope": "Public study guide · exam separate",
+      "detail": "Focus on identity lifecycle, access policy, and workload identities.",
+      "aiOnly": false
+    },
+    {
+      "id": "microsoft-sc401",
+      "provider": "Microsoft Learn",
+      "title": "Information security (SC-401)",
+      "domains": [
+        "privacy",
+        "grc",
+        "iam"
+      ],
+      "skills": [
+        "privacy",
+        "risk",
+        "identity"
+      ],
+      "source": "microsoft-data",
+      "access": "free",
+      "scope": "Public study guide · exam separate",
+      "detail": "Compare data classification, protection and data-loss-prevention controls in Microsoft 365.",
+      "aiOnly": false
+    },
+    {
+      "id": "aws-security-plan",
+      "provider": "AWS Skill Builder",
+      "title": "AWS security learning options",
+      "domains": [
+        "cloud",
+        "iam",
+        "architecture",
+        "appsec",
+        "mlsec"
+      ],
+      "skills": [
+        "cloud",
+        "identity",
+        "appsec"
+      ],
+      "source": "aws-security",
+      "access": "provider",
+      "scope": "Mixed access",
+      "detail": "Use vendor training for workload permissions, data protection and cloud monitoring.",
+      "aiOnly": false
+    },
+    {
+      "id": "fortinet-foundations",
+      "provider": "Fortinet Training Institute",
+      "title": "Network security learning options",
+      "domains": [
+        "cloud",
+        "ot",
+        "architecture",
+        "vulnerability"
+      ],
+      "skills": [
+        "network",
+        "security",
+        "cloud"
+      ],
+      "source": "fortinet-training",
+      "access": "provider",
+      "scope": "Mixed access",
+      "detail": "Practice network defense concepts. Pair OT learning with site safety and dedicated ICS training.",
+      "aiOnly": false
+    },
+    {
+      "id": "google-foundations",
+      "provider": "Google Skills",
+      "title": "Google Cybersecurity Certificate",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel",
+        "grc"
+      ],
+      "skills": [
+        "security",
+        "network",
+        "python",
+        "detection"
+      ],
+      "source": "google-training",
+      "access": "provider",
+      "scope": "Check program access",
+      "detail": "Use a structured introduction to common security workflows before choosing a specialization.",
+      "aiOnly": false
+    },
+    {
+      "id": "inl-ot",
+      "provider": "Idaho National Laboratory",
+      "title": "ICS cybersecurity training",
+      "domains": [
+        "ot"
+      ],
+      "skills": [
+        "ot",
+        "network",
+        "response"
+      ],
+      "source": "inl-ics",
+      "access": "provider",
+      "scope": "Check registration and eligibility",
+      "detail": "Use dedicated ICS training for OT safety, architecture and defensive workflows.",
+      "aiOnly": false
+    },
+    {
+      "id": "asvs-public",
+      "provider": "OWASP",
+      "title": "ASVS application control review",
+      "domains": [
+        "appsec",
+        "architecture",
+        "iam",
+        "vulnerability"
+      ],
+      "skills": [
+        "appsec",
+        "identity",
+        "security"
+      ],
+      "source": "asvs",
+      "access": "free",
+      "scope": "Public standard · guided self-study",
+      "detail": "Select a control area and document what evidence would demonstrate that the requirement is met.",
+      "aiOnly": false
+    },
+    {
+      "id": "genai-self-study",
+      "provider": "NIST / public references",
+      "title": "Generative AI risk review",
+      "domains": [
+        "grc",
+        "privacy",
+        "appsec",
+        "cloud",
+        "architecture",
+        "mlsec"
+      ],
+      "skills": [
+        "risk",
+        "privacy",
+        "ai",
+        "judgment"
+      ],
+      "source": "genai-profile",
+      "access": "free",
+      "scope": "Public guidance · guided self-study",
+      "detail": "Choose a GenAI use case, document an evaluation and record who owns the residual risks.",
+      "aiOnly": true
+    },
+    {
+      "id": "nist-control-study",
+      "provider": "NIST / public references",
+      "title": "Security control evidence and CUI scope",
+      "domains": [
+        "grc",
+        "privacy",
+        "architecture",
+        "cloud",
+        "iam"
+      ],
+      "skills": [
+        "risk",
+        "privacy",
+        "identity"
+      ],
+      "source": "nist-800-53",
+      "access": "free",
+      "scope": "Public guidance · guided self-study",
+      "detail": "Select controls for a fictional system, identify the evidence needed to assess them, and review SP 800-171 separately if the scenario involves CUI.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-detection-engineering",
+      "provider": "TCM Security",
+      "title": "Detection Engineering for Beginners",
+      "domains": [
+        "soc",
+        "dfir",
+        "intel"
+      ],
+      "skills": [
+        "detection"
+      ],
+      "source": "tcm-detection",
+      "access": "provider",
+      "scope": "Membership · defensive specialization",
+      "detail": "Practice documenting detection objectives and the evidence that validates them.",
+      "aiOnly": false
+    },
+    {
+      "id": "tcm-windows-forensics",
+      "provider": "TCM Security",
+      "title": "Introduction to Windows Forensics",
+      "domains": [
+        "dfir",
+        "soc"
+      ],
+      "skills": [
+        "response",
+        "detection"
+      ],
+      "source": "tcm-windows-dfir",
+      "access": "provider",
+      "scope": "Membership · DFIR specialization",
+      "detail": "Practice organizing Windows investigation evidence and documenting a defensible timeline.",
+      "aiOnly": false
     }
   ]
 }

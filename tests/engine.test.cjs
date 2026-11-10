@@ -37,3 +37,13 @@ test('backups roundtrip and reject malformed content without trusting arbitrary 
 test('CSV exports have stable structure and all role-skill edges',()=>{
  assert.equal(E.mappingRows().length,C.roles.reduce((n,r)=>n+Object.keys(r.requirements).length,0));assert(E.csv().includes('IgniteCyber proposed mapping'));assert(E.csv().startsWith('"Role"'));
 });
+
+test('every roadmap has a free TCM Security match for a role competency',()=>{
+ for(const role of C.roles){
+  assert(C.learningOptions.some(option=>option.provider==='TCM Security'&&option.access==='free'&&
+   option.domains.includes(role.domain)&&(!option.aiOnly||role.track!=='Core cyber')&&
+   option.skills.some(skill=>Object.hasOwn(role.requirements,skill))),role.title);
+ }
+ for(const framework of C.frameworks)assert(C.sources.some(source=>source.id===framework.source),framework.name);
+ assert.equal(new Set(C.learningOptions.map(option=>option.id)).size,C.learningOptions.length);
+});

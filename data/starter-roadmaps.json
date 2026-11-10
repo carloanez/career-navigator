@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": "0.1.0",
-  "reviewed": "2026-10-21",
+  "catalogVersion": "0.2.0",
+  "reviewed": "2026-11-10",
   "baseline": "Unassessed. Plans include all competency gaps and unmet prerequisites.",
   "mappingStatus": "IgniteCyber proposed curriculum; requires expert review.",
   "assumedWeeklyHours": 6,
@@ -17,6 +17,7 @@
         "intel": 2
       },
       "credentialCandidates": [
+        "PSAA",
         "SAL1",
         "BTL1",
         "SAL2"
@@ -144,6 +145,7 @@
         "judgment": 3
       },
       "credentialCandidates": [
+        "PSAA",
         "SAL1",
         "BTL1",
         "SAL2",

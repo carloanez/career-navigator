@@ -279,3 +279,12 @@ th{background:#061c36;color:#91bce3}td,th{border-color:var(--cf-border)}
 @media screen and (max-width: 650px) {
   .crosswalk-scroll { display: block; font-size: .8125rem; margin-block: 0 .65rem; }
 }
+
+.training-spotlight {
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid #426758;
+  border-radius: .875rem;
+  background: #0b242e;
+}
+.training-spotlight h3 { margin-block-start: 0; color: #e0f393; }
+#provider-title { scroll-margin-block-start: 1rem; }
