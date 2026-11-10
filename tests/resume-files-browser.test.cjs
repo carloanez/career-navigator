@@ -21,7 +21,7 @@ function zip(entries){
   await p.locator('#resume-import-file').setInputFiles({name:'resume.docx',mimeType:'application/vnd.openxmlformats-officedocument.wordprocessingml.document',buffer:word});
   await p.waitForFunction(()=>document.querySelector('#resume-text').value==='Fictional Résumé\nReviewed access logs');
   await p.locator('#resume-import-file').setInputFiles({name:'broken.docx',mimeType:'application/octet-stream',buffer:Buffer.from('invalid')});
-  await p.waitForFunction(()=>document.querySelector('#toast').textContent.includes('Import failed'));
+  await p.waitForFunction(()=>document.querySelector('#resume-text-import-status').textContent.includes('Import failed'));
   assert.equal(await p.locator('#resume-text').inputValue(),'Fictional Résumé\nReviewed access logs');
   await p.locator('#linkedin-url').fill('https://www.linkedin.com/in/fictional-profile/?tracking=demo');
   await p.getByRole('button',{name:'Save profile link'}).click();

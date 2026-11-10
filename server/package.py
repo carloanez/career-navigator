@@ -14,7 +14,7 @@ for name in names:
  if name=='index.html':
   s=data.decode();s=re.sub(r'(src|href)="([^"#][^"]*)"',lambda m:m[1]+'="'+prefix+m[2]+'"',s)
   s=s.replace('<meta name="theme-color"','<meta name="robots" content="noindex, nofollow">\n  <meta name="theme-color"')
-  s=s.replace('<div class="workspace-label">','<a href="/" style="display:block;margin:14px 26px;color:#42c8ff;font-size:13px">← IgniteCyber Academy</a><div class="workspace-label">')
+  s=s.replace('<div class="workspace-label">','<a href="/" class="academy-back">← IgniteCyber Academy</a><div class="workspace-label">')
   data=s.encode()
  files[name]=data
 with zipfile.ZipFile(output/'public-runtime.zip','w',zipfile.ZIP_DEFLATED) as z:

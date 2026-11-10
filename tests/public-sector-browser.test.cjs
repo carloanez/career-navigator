@@ -41,13 +41,13 @@ const fixtures = [
    assert(await panel.getByRole('link', {name:new RegExp(fixture.source)}).isVisible());
    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
    await panel.getByRole('button', {name:'Ask Nova AI about this step'}).click();
-   assert.match(await page.locator('#nova-chat-message').inputValue(), fixture.nova);
+   assert.match(await page.locator('#nova-message').inputValue(), fixture.nova);
    const [reply] = await Promise.all([
     page.waitForResponse(r=>/nova_api=chat|\/api\/nova\/chat/.test(r.url()),{timeout:35000}),
-    page.locator('#nova-chat-send').click()
+    page.locator('.nova-send').click()
    ]);
    assert.equal(reply.status(),200);
-   await page.locator('#nova-chat-log p').nth(1).waitFor();
+   await page.locator('.nova-log p').nth(1).waitFor();
    if(!live){
     assert.match(payloads.at(-1).input[0].content, fixture.nova);
     assert(!JSON.stringify(payloads.at(-1)).includes(requirements.split('\n')[0]));

@@ -4,3 +4,6 @@
 @media print{.career-role-bar,.career-section-tabs,.studio-filters,.career-actions,.career-related,.career-launchpad,.fact-confirm,#beta-feedback-form button{display:none!important}.nova-note,.evidence-excerpt,.answer-transcript,.bullet-preview,.career-metrics>div,.match-table blockquote{background:#fff!important;color:#182637!important;border-color:#c6d4de!important}.nova-note p,.nova-note strong,.career-fineprint,.career-metrics strong,.career-metrics span,.bullet-preview p{color:#324e64!important}.resume-inputs{display:none}.match-table td{min-width:0!important}.sidebar nav{display:none}}
 
 .job-search-frame{display:block;width:100%;min-height:32rem;border:1px solid var(--line);border-radius:12px;background:#faf9f3}
+
+.import-status { margin-block: .5rem 0; color: var(--cf-muted); font-size: .8125rem; }
+.import-status:empty { margin: 0; }
